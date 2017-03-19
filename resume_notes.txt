@@ -1,0 +1,21 @@
+Projects while at IB:
+
+File-based access to account management system
+  Parsed/processed XML files to allowing batch processing of wire withdrawals, deposit notifications, position transfers, etc.
+  Generate XML files acknowledging these instructions and returning processing status
+  Provided XML schema files (used xjc/JAXB in parsing and generating files) 
+  Created a web interface (using Servlets+JSPs) allowing users to
+     view the statuses of sorted and filtered instructions
+     upload and initiate processing of new files after providing 2nd factor credentials
+  Encrypt and sign files uploaded through web interface
+  Refactored system to allow non-file instruction sources (e.g. SWIFT messages)
+Second-factor authentication device mailing system
+  Generated pdfs with names and addresses for mailing envelope window 
+    user information taken from Oracle database
+    pdfs also included barcodes for mapping devices (with their own barcodes) to these users
+  Automatically activated devices after sending warning messages sent to clients
+  Generated system reports (e.g. number of "Bingo card" devices upgraded to PIN pad display cards)
+Client for OCR web service (SOAP) client for processing passport images
+  Decrypted image files uploaded by users
+  Sent image files to service over https
+  Matched extracted text with typed information 
