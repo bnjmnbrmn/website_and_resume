@@ -15,7 +15,7 @@ Second-factor authentication device mailing system
     pdfs also included barcodes for mapping devices (with their own barcodes) to these users
   Automatically activated devices after sending warning messages sent to clients
   Generated system reports (e.g. number of "Bingo card" devices upgraded to PIN pad display cards)
-Client for OCR web service (SOAP) client for processing passport images
+Client for OCR web service (SOAP) for processing passport images
   Decrypted image files uploaded by users
   Sent image files to service over https
   Matched extracted text with typed information 
