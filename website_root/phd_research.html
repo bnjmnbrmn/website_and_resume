@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, init-scale=1" />
+    <title>Benjamin Berman</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="page-header">
+        <h1>Benjamin Berman</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">About Me</a></li>
+                <li class="active"><a href="#">PhD Research</a></li>
+                <li><a href="https://github.com/bnjmnbrmn/">Github</a></li>
+                <li><a href="resume.html">Resume</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 ">
+          <h2 class="sub-heading">PhD Work</h2>
+          <p>I successfully defended my Computer Science PhD dissertation at the University of Iowa in 2014.  As a PhD student, I worked on the human-computer interaction problem of finding ways to <strong>make complex tasks like math and programming easier to do and learn</strong>.  I aimed my work at several big issues:
+            <ul>
+              <li>how to (efficiently) learn to quickly enter large numbers of complex expressions into a computer</li>
+              <li>how to make sense of the structure of these expressions</li>
+              <li>how to manipulate expressions</li>
+              <li>how to know what sorts of manipulations are allowed</li>
+              <li>how to clearly see how an expression has been manipulated</li>
+            </ul>
+            My advisor was Prof. <a href="http://homepage.cs.uiowa.edu/~hourcade/">Juan Pablo Hourcade</a>.  I also worked with Prof. <a href="http://homepage.cs.uiowa.edu/~astump/">Aaron Stump</a>.
+          </p>
+          <h3>Research Projects</h3>
+          <p>I worked on two distinct projects in my research:  <strong>Keyboard-Card Menus</strong> and <strong>user interfaces for the Coq Proof Assistant</strong>.  However, in my dissertation (and in the second video below), I demonstrated how the former may be applied to the latter.</p>
+
+          <h4>Keyboard-Card Menus</h4>
+          <p>
+            Keyboard-Card Menus were a method I developed for helping users learn shortcuts quickly.  I presented these, and a study demonstrating their effectiveness, at the Interaccion Spanish HCI conference in 2013.
+          </p>
+          <p class="video">
+            <iframe src="http://www.youtube.com/embed/LfJuZX2339s" frameborder="0" allowfullscreen></iframe>
+          </p>
+
+          <p> One of my hopes is that this sort of system could be used for entering and manipulating math.  LaTeX can be used to create nicely typeset equations, but I do not think it is fast enough to learn or to use:
+            <ul>
+              <li>A Google search for how to write a fraction may be at least an order of magnitude slower than finding the command in a menu or toolbar</li>
+              <li>Providing a traditional menu or toolbar frequently means many users will never learn to invoke the command from the keyboard (which is generally faster than using the mouse)</li>
+              <li>Typing &quot;<code>\frac{}{}</code>&quot; starts to seem slow and awkward when one compares it to drawing a short line on a piece of paper.  This might not be the case if we can reduce the number of keystrokes from 9+ down to, say, 2.</li>
+            </ul>
+          </p>
+
+          <p>
+            Below is a prototype for a structure editor that uses keyboard-card menus and syntax tree highlighting in the jEdit plugin.  This particular setup is for doing Fitch-style natural deduction Coq-checkable propositional logic proofs, but I imagine you could use similar techniques to write and edit HTML, XML, LaTeX, Java, etc...the idea is to make it faster to write syntactically correct documents.  A few things to note:  
+            <ul>
+              <li>The root keyboard-card changes (sometimes you are writing individual characters, sometimes you are navigating and manipulating chunks of text).</li>
+              <li>You can be in "leaf mode" (green highlighting) or "branch mode" (brown highlighting).  Branch mode is shown at the end of the video.</li>
+            </ul>
+          </p>
+
+          <p class="video">
+            <iframe src="http://www.youtube.com/embed/O4lxmnmrsS0" frameborder="0" allowfullscreen></iframe>
+          </p>
+          <h4>Coq User Interfaces</h4>
+
+          <p><a href="http://coq.inria.fr/">Coq</a> is one of the most powerful and widely used interactive theorem provers.  It is really a tool that helps you to create <em>programs</em> in a language that has a very sophisticated type system.  The type system is actually so sophisticated that (1) types can be used to state mathematical theorems, (2) a &ldquo;term&rdquo; (e.g. a function) can be viewed as a proof of its type, and (3) type-checking can be viewed as proof-checking.  All of this gets to be very complicated, which why I worked on new user interfaces to help people use the tool.
+          </p>
+
+          <p>
+            I developed a jEdit plugin, tentatively called CoqEdit, that serves as a new, experimental user interface.  The basic version is similar to CoqIDE (which comes bundled with Coq) and Proof General (an Emacs mode that is used with several other interactive theorem provers as well).
+          </p>
+
+          <p class="video">
+            <iframe src="http://www.youtube.com/embed/qL4mQBdmWJQ" frameborder="0" allowfullscreen></iframe>
+          </p>
+
+          <p class="video">
+            <iframe src="http://www.youtube.com/embed/gjVpf1fboVQ" frameborder="0" allowfullscreen></iframe>
+          </p>
+          <p>The videos above show a potential CoqEdit add-on that I had students at the University of Iowa try out as part of a usability experiment.  The video below is actually a tutorial on proofs, and how to do them with CoqEdit, that was used in the usability experiment; if you just want to see how the user interface works, I would skip ahead to 4 minutes 50 seconds and watch the next three minutes or so (maybe on 2x speed).</p>
+          <p class="video">
+            <!--					<iframe width="560" height="315" src="//www.youtube.com/embed/flCjB8qJ8zU" frameborder="0" allowfullscreen></iframe>-->
+            <iframe src="http://www.youtube.com/embed/flCjB8qJ8zU" frameborder="0" allowfullscreen></iframe>
+          </p>
+          <p>
+            I also developed an additional jEdit plugin, called &quot;Proof Previews"&quot; that can be used with CoqEdit to provide a pop-up completion menu of available commands (i.e. restricted to commands that do not immediately produce errors) and allows users to preview the effects of entering the selected command before it is actually entered.  
+          </p>
+          <br/>
+        </div>
+      </div>
+
+
+      <script src="bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

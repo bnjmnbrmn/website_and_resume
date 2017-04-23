@@ -1,8 +1,25 @@
 .job-subsection {
-  margin-left:1em;
+  margin-left: 10px;
 }
 
 .contact-info {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  margin-top: 10px;
+}
+
+.page-header {
+  text-align: center;
+}
+
+.video {
+  text-align: center;
+}
+
+.video iframe {
+  height: 315px;
+  width: 560px;
 }
