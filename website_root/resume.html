@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, init-scale=1" />
-    <title>Benjamin Berman</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="custom.css">
-  </head>
-  <body>
-    <div class="container"> 
-      <div class="page-header">
-        <h1>Benjamin Berman</h1>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 contact-info">
-          
-          Location: Pittsburgh, PA,<br/>
-          Willing to do remote work
-          <!--256 Washington Blvd, Apt 1<br/>-->
-          <!--Stamford, Connecticut 06902, USA<br/>-->
-        </div>
-        <div class="col-sm-4 contact-info">
-          bnjmnbrmn@gmail.com 
-        </div>
-        <div class="col-sm-4 contact-info">
-          <a href="http://bnjmnbrmn.com">http://bnjmnbrmn.com</a><br/>
-          <a href="http://github.com/bnjmnbrmn">http://github.com/bnjmnbrmn</a>
-        </div>
-      </div>
 
-      <div>      
-        <h2>Overview</h2>
-        <p>I am a software engineer with a <strong>PhD</strong> and <strong>6+ years of experience in industry</strong> who is interested in writing quality code, learning new skills and applications for those skills, and solving people's problems.  Most recently, I have been working primarily in Java (more specifically, Spring Boot microservices), though a large portion of my time is spent using supporting technologies, such as Docker, Ansible, Terraform, Gradle, and Bash, and integrating with technologies such as Apache Kafka, MongoDB, Redis, and PostgreSQL.  While I enjoy all sorts of learning, I am particularly excited when I can pinpoint the ambiguities in specifications that can derail a project, or discover a tool or technique that can make work faster and more accurate.</p>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, init-scale=1" />
+  <title>Benjamin Berman</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="custom.css">
+</head>
 
-      <!--
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>Benjamin Berman</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 contact-info">
+
+        Location: Pittsburgh, PA,<br />
+        Willing to do remote work
+        <!--256 Washington Blvd, Apt 1<br/>-->
+        <!--Stamford, Connecticut 06902, USA<br/>-->
+      </div>
+      <div class="col-sm-4 contact-info">
+        bnjmnbrmn@gmail.com
+      </div>
+      <div class="col-sm-4 contact-info">
+        <a href="http://bnjmnbrmn.com">http://bnjmnbrmn.com</a><br />
+        <a href="http://github.com/bnjmnbrmn">http://github.com/bnjmnbrmn</a>
+      </div>
+    </div>
+
+    <div>
+      <h2>Overview</h2>
+      <p>I am a software engineer with a <strong>PhD</strong> and <strong>6+ years of experience in industry</strong>
+        who is interested in writing quality code, learning new skills and applications for those skills, and solving
+        people's problems. Most recently, I have been working primarily in Java (more specifically, Spring Boot
+        microservices), though a large portion of my time is spent using supporting technologies, such as Docker,
+        Ansible, Terraform, Gradle, and Bash, and integrating with technologies such as Apache Kafka, MongoDB, Redis,
+        and PostgreSQL. While I enjoy all sorts of learning, I am particularly excited when I can pinpoint the
+        ambiguities in specifications that can derail a project, or discover a tool or technique that can make work
+        faster and more accurate.</p>
+    </div>
+
+    <!--
       <div>
         <h2>Qualifications</h2>
 
@@ -84,193 +93,234 @@
         </ul>
       </div>
       -->
-      <div>
-        <h2>Education</h2>
-        <ul>
-          <li>
-            Ph.D. Computer Science, The University of Iowa, Iowa City, IA, December 2014
-            <ul>
-              <li>
-                Dissertation Title:  <em>Development And User Testing Of New User Interfaces For Mathematics And Programming Tools</em>
-              </li>
-            </ul>
-          </li>
-          <li>
-            B.S. Physics, Rice University, Houston, TX, May 2008
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>Work Experience</h2>
-	<div>
-		<h4> 3M/M*Modal, Pittsburgh, PA<h4>
-		(3M acquired M*Modal in February, 2019, integrating it with its Healthcare Information Systems Division but keeping the brand)
-		<div class="job-subsection">
-			<em><strong>Senior Software Engineer</strong>, July 2017 to present.</em><br/>
-			Primarily Java/Spring Boot, with heavy usage of supporting technologies, plus leadership, architectural, and mentoring activities.  The umbrella project/product I have been responsible for is Computer Assisted Provider Documentation (CAPD) Services, a web service which connects a desktop client interacting with an Electronic Medical Record (EHR) system, such as Epic or Cerner, with a real-time natural language processor, providing layers for security and feedback customization. Activities related to this have included:
-			<ul>
-				<li>
-					Designing and Developing CAPD Data Services
-					<ul>
-						<li>A new set of microservices, the core of which uses Apache Kafka to gather and process large amounts of data from our clients in real time, primarily for reporting purposes.</li>
-					</ul>
-				</li>
-				<li>
-					Adding support for Encounter-based reasoning
-					<ul>
-						<li>This connected the real-time natural language processor with the results of processing completed documents from a customer EHR system, requiring multiple mapping and caching mechanisms.</li>
-					</ul>
-				</li>
-				<li>
-					Implementing the Notereader CDI Interface
-					<ul>
-						<li>An inter-company project, this connected our NLP with Epic to provide near real-time encounter-based reasoning directly in the EMR, storing and incorporating feedback from providers.</li>
-					</ul>
-				</li>
-				<li>
-					Migration to AWS
-					<ul>
-						<li>This involved the creation of a library of Terraform and Ansible scripts that allows our services to be deployed across multiple environments consistently.</li>
-
-					</ul>
-				</li>
-			</ul>
-		</div>
-
-	</div>
-
-        <div>
-          <h4>Interactive Brokers Group, Greenwich, CT</h4>
-          <div class="job-subsection">
-            <em><strong>Secure Application Developer</strong>, February 2015 to present.</em><br/>
-            Primarily Java development, with some PL/SQL.  Projects included (but were not limited to):
-            <ul>
-              <li>
-                File-based access to account management system
-                <ul>
-                  <li>Processed XML files allowing $1,000,000,000+ clients to create batch requests for wire withdrawals, deposit notifications, position transfers, etc.; generated XML response files</li>
-                  <li>Wrote XML schema specification files provided to clients</li>
-                  <li>Created a web interface allowing users to
-                    <ul>
-                      <li>view the statuses of sorted and filtered instructions</li> 
-                      <li>upload and initiate processing of new files after providing 2nd factor credentials</li>
-                    </ul>
-                  </li>
-                  <li>Encrypted and signed files uploaded through the web interface</li>
-                  <li>Refactored system to allow non-file instruction sources (e.g. SWIFT messages)</li>
-                  <li>Designed and implemented fine-grained authorization system</li>
-                </ul>
-              </li>
-              <li>
-                Second-factor authentication device mailing system
-                <ul>
-                  <li>
-                    Generated pdfs with names and addresses for mailing envelope window
-                    <ul>
-                      <li>Gathered user information from Oracle database</li>
-                      <li>Included barcodes for mapping devices (with their own barcodes) to users</li>
-                    </ul> 
-                  </li>
-                  <li>Automatically activated devices after sending warning emails to device recipients</li>
-                  <li>Generated system reports (e.g. number of "Bingo card" devices upgraded to PIN pad display cards)</li>
-                </ul>
-              </li>
-              <li>
-                Client for OCR web service (SOAP) for processing passport images
-                <ul>
-                  <li>Decrypted image files uploaded by users</li>
-                  <li>Sent image files to web service over https</li>
-                  <li>Compared extracted text with database records</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div>
-          <h4>The University of Iowa, Iowa City, IA</h4> 
-          <div class="job-subsection">
-            <em><strong>Instructor</strong>, spring semester, 2014.</em><br/>
-            Introductory Java course for undergraduate and graduate students
-            <ul>
-              <li>Developed new course material including programming projects, lesson plans, lectures, and exams</li>
-              <li>Worked with students individually, in small groups, and as a class of 30</li>
-            </ul>
-          </div>
-        </div>
-        <div class="job-subsection">
-          <em><strong>Research Assistant</strong>, September, 2012, to September, 2014.</em><br/>
-          User interfaces for the Coq Proof Assistant
+    <div>
+      <h2>Education</h2>
+      <ul>
+        <li>
+          Ph.D. Computer Science, The University of Iowa, Iowa City, IA, December 2014
           <ul>
-            <li>Collaborated in the planning and development phases of NSF award CCF-1250306</li>
-            <li>Developed a basic UI for Coq as a plugin for the jEdit editor </li>
-            <li>Developed experimental extensions to the basic UI</li>
-            <li>Developed and executed user testing protocol</li>
+            <li>
+              Dissertation Title: <em>Development And User Testing Of New User Interfaces For Mathematics And
+                Programming Tools</em>
+            </li>
           </ul>
-        </div>
+        </li>
+        <li>
+          B.S. Physics, Rice University, Houston, TX, May 2008
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Work Experience</h2>
+      <div>
+        <h4> M*Modal / 3M, Pittsburgh, PA</h4>
+        <p>(3M acquired M*Modal in February, 2019, integrating it into its Healthcare Information Systems Division but
+          keeping the brand)</p>
         <div class="job-subsection">
-          <em><strong>Research Assistant</strong>, spring semester 2012</em><br/>
+
+          <em><strong>Senior Software Engineer</strong>, July 2017 to present.</em><br />
+          Primarily Java/Spring Boot, with heavy usage of supporting technologies, plus leadership, architectural,
+          and mentoring activities. The umbrella project/product I have been responsible for is Computer Assisted
+          Provider Documentation (CAPD) Services, a web service which connects a desktop client interacting with an
+          Electronic Medical Record (EMR) system, such as Epic or Cerner, with a real-time natural language
+          processor, providing layers for security and feedback customization. Activities related to this have
+          included:
           <ul>
-            <li>Developed a user interface for "KIND", a tool for automatically verifying properties of the programs written in the Lustre dataflow programming language</li>
-            <li>Debugged connection with tool back end</li>
-          </ul>
-        </div>
-        <div class="job-subsection">
-          <em><strong>Teaching Assistant</strong>, fall semester 2008 through fall semester 2013</em><br/>
-          <ul>
-            <li>Nine semesters in the University of Iowa Computer Science Department</li>
-            <li>Guided discussion sections for three different courses</li>
-            <li>Graded and answered student questions for the graduate level "Formal Methods in Software Engineering" course for three semesters</li>
+            <li>
+              Designing and Developing CAPD Data Services
+              <ul>
+                <li>A new set of microservices, the core of which uses Apache Kafka to gather and process large
+                  amounts of data from our clients in real time, primarily for reporting purposes.</li>
+              </ul>
+            </li>
+            <li>
+              Adding support for Encounter-Based Reasoning
+              <ul>
+                <li>A major new feature connecting the real-time natural language processor with the results of
+                  processing completed
+                  documents from a customer EHR system</li>
+                <li>Required new systems to manage user and identifier mappings, configuration and credential caching,
+                  integration of JSON Web Tokens, fallback mechanisms, an additional API call for extended NLP evidence,
+                  and improved metrics, monitoring, and logging.</li>
+              </ul>
+            </li>
+            <li>
+              Implementing the Notereader CDI Interface
+              <ul>
+                <li>An intercompany project connecting 3M/M*Modal's NLP with Epic to provide near real-time
+                  encounter-based reasoning directly in the EMR., storing and incorporating feedback from providers.
+                </li>
+                <li>Stores provider feedback, using that feedback in determining subsequent responses (Spring Data
+                  JPA/Hibernate)
+                </li>
+              </ul>
+            </li>
+            <li>
+              Migration to AWS
+              <ul>
+                <li>This involved the creation of a library of Terraform and Ansible scripts that allows our
+                  services to be deployed across multiple environments consistently.</li>
+                  <li>Implemented new security requirements (customer data segregation, TLS between microservices)</li>
+              </ul>
+            </li>
+            <li>
+              Improvements to build scripts
+              <ul>
+                <li>Incorporated Ansible configuration generation into a Gradle plugin to maintain consistency between local development and other environments, and to reduce risk of password exposure.</li>
+                <li>Incorporated local dockerized Mongo and Postgres databases, speeding up application startup during development by about 4x.</li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
-      <div>
-        <h2>Skills</h2>
-        <div class="row">
-          <div class="col-sm-6">
-            <ul>
-              <li>Java, various other languages (e.g. PL/SQL, JavaScript, C, Ruby)</li> 
-              <li>Java EE (Servlets, JSPs, EJBs, etc.)</li>
-              <li>Piccolo Java library for zoom-able user interfaces</li>
-              <li>jEdit plugin development</li>
-              <li>Unix, Vim</li>
-            </ul>
-          </div>
-          <div class="col-sm-6">
-            <ul>
-              <li>HTML, CSS, SQL</li>
-              <li>Git, Subversion, CVS</li>
-              <li>LaTeX, MS Excel (including Analysis ToolPak), Access, Word, PowerPoint, Mathematica, Google Docs, iMovie</li>
-              <li>Coq, Alloy, Lustre, ESC/Java2, Dafny</li> 
-            </ul> 
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <h2>Publications</h2>
-        <p>
-          Berman, B. A. and Hourcade, J. P (2014).  Keyboard Card Menus:  A New Presentation of Non-Standard Shortcuts.  <em>Journal of Universal Computer Science, Special Issue on Trending Breakthroughs in Human-Computer Interaction.</em>
-        </p>
-        <p>
-          Berman, B. A. and Hourcade, J. P (2014).  Keyboard Card Menus: Faster Learning of Many Fast Commands.  In <em>Proceedings of the XIV International Congress of Human-Computer Interaction (Interaction 2013), in the Spanish Congress of Informatics (CEDI)</em>, pages 105-112, Spain, 2013.  ISBN 978-84-695-8352-4.
-        </p>
-      </div>
-      <div>
-        <h2>Presentations</h2>
-        <p>
-          <em>New Coq User Interfaces: Survey and Ideas.</em> Presentation co-authored with Aaron Stump and Juan Pablo Hourcade.  Presented at <em>The Coq Workshop 2012</em>, Princeton, NJ, USA, August 12, 2012.
-        </p>
-        <br/>
-      </div>
-      <!--<div>-->
-        <!--<h2>Other</h2>-->
-      <!--</div>-->
 
     </div>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
+    <div>
+      <h4>Interactive Brokers Group, Greenwich, CT</h4>
+      <div class="job-subsection">
+        <em><strong>Secure Application Developer</strong>, February 2015 to present.</em><br />
+        Primarily Java development, with some PL/SQL. Projects included (but were not limited to):
+        <ul>
+          <li>
+            File-based access to account management system
+            <ul>
+              <li>Processed XML files allowing $1,000,000,000+ clients to create batch requests for wire withdrawals,
+                deposit notifications, position transfers, etc.; generated XML response files</li>
+              <li>Wrote XML schema specification files provided to clients</li>
+              <li>Created a web interface allowing users to
+                <ul>
+                  <li>view the statuses of sorted and filtered instructions</li>
+                  <li>upload and initiate processing of new files after providing 2nd factor credentials</li>
+                </ul>
+              </li>
+              <li>Encrypted and signed files uploaded through the web interface</li>
+              <li>Refactored system to allow non-file instruction sources (e.g. SWIFT messages)</li>
+              <li>Designed and implemented fine-grained authorization system</li>
+            </ul>
+          </li>
+          <li>
+            Second-factor authentication device mailing system
+            <ul>
+              <li>
+                Generated pdfs with names and addresses for mailing envelope window
+                <ul>
+                  <li>Gathered user information from Oracle database</li>
+                  <li>Included barcodes for mapping devices (with their own barcodes) to users</li>
+                </ul>
+              </li>
+              <li>Automatically activated devices after sending warning emails to device recipients</li>
+              <li>Generated system reports (e.g. number of "Bingo card" devices upgraded to PIN pad display cards)
+              </li>
+            </ul>
+          </li>
+          <li>
+            Client for OCR web service (SOAP) for processing passport images
+            <ul>
+              <li>Decrypted image files uploaded by users</li>
+              <li>Sent image files to web service over https</li>
+              <li>Compared extracted text with database records</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <h4>The University of Iowa, Iowa City, IA</h4>
+      <div class="job-subsection">
+        <em><strong>Instructor</strong>, spring semester, 2014.</em><br />
+        Introductory Java course for undergraduate and graduate students
+        <ul>
+          <li>Developed new course material including programming projects, lesson plans, lectures, and exams</li>
+          <li>Worked with students individually, in small groups, and as a class of 30</li>
+        </ul>
+      </div>
+      <div class="job-subsection">
+        <em><strong>Research Assistant</strong>, September, 2012, to September, 2014.</em><br />
+        User interfaces for the Coq Proof Assistant
+        <ul>
+          <li>Collaborated in the planning and development phases of NSF award CCF-1250306</li>
+          <li>Developed a basic UI for Coq as a plugin for the jEdit editor </li>
+          <li>Developed experimental extensions to the basic UI</li>
+          <li>Developed and executed user testing protocol</li>
+        </ul>
+      </div>
+      <div class="job-subsection">
+        <em><strong>Research Assistant</strong>, spring semester 2012</em><br />
+        <ul>
+          <li>Developed a user interface for "KIND", a tool for automatically verifying properties of the programs
+            written in the Lustre dataflow programming language</li>
+          <li>Debugged connection with tool back end</li>
+        </ul>
+      </div>
+      <div class="job-subsection">
+        <em><strong>Teaching Assistant</strong>, fall semester 2008 through fall semester 2013</em><br />
+        <ul>
+          <li>Nine semesters in the University of Iowa Computer Science Department</li>
+          <li>Guided discussion sections for three different courses</li>
+          <li>Graded and answered student questions for the graduate level "Formal Methods in Software Engineering"
+            course for three semesters</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h2>Skills</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <ul>
+            <li>Java, varying degrees of experience with other languages (Scala, PL/SQL, JavaScript, C, ...)</li>
+            <li>Spring, Spring Boot, Spring Data JPA, Spring Cloud Stream</li>
+            <li>REST, SOAP</li>
+            <li>Mongo, Postgres, Redis, Apache Kafka</li>
+            <li>Java EE (Servlets, JSPs, EJBs, etc.)</li>
+            <li>Piccolo Java library for zoom-able user interfaces, Jackson, Kafka Streams</li>
+            <li>jEdit plugin development</li>
+            <li>Unix/Linux, Vi/Vim, SSH</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <ul>
+            <li>HTML, CSS, SQL</li>
+            <li>Git, Mercurial, Subversion, CVS</li>
+            <li>LaTeX, MS Excel (including Analysis ToolPak), Access, Word, PowerPoint, Mathematica, Google Docs, iMovie
+            </li>
+            <li>Coq, Alloy, Lustre, ESC/Java2, Dafny</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Publications</h2>
+      <p>
+        Berman, B. A. and Hourcade, J. P (2014). Keyboard Card Menus: A New Presentation of Non-Standard Shortcuts.
+        <em>Journal of Universal Computer Science, Special Issue on Trending Breakthroughs in Human-Computer
+          Interaction.</em>
+      </p>
+      <p>
+        Berman, B. A. and Hourcade, J. P (2014). Keyboard Card Menus: Faster Learning of Many Fast Commands. In
+        <em>Proceedings of the XIV International Congress of Human-Computer Interaction (Interaction 2013), in the
+          Spanish Congress of Informatics (CEDI)</em>, pages 105-112, Spain, 2013. ISBN 978-84-695-8352-4.
+      </p>
+    </div>
+    <div>
+      <h2>Presentations</h2>
+      <p>
+        <em>New Coq User Interfaces: Survey and Ideas.</em> Presentation co-authored with Aaron Stump and Juan Pablo
+        Hourcade. Presented at <em>The Coq Workshop 2012</em>, Princeton, NJ, USA, August 12, 2012.
+      </p>
+      <br />
+    </div>
+    <!--<div>-->
+    <!--<h2>Other</h2>-->
+    <!--</div>-->
+
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>
