@@ -128,47 +128,58 @@
           included:
           <ul>
             <li>
-              Designing and Developing CAPD Data Services
+              Designing and developing CAPD Data Services
               <ul>
-                <li>A new set of microservices, the core of which uses Apache Kafka to gather and process large
-                  amounts of data from our clients in real time, primarily for reporting purposes.</li>
+                <li>Created new microservices, the core of which uses Apache Kafka and the Kafka Streams library to gather and process large
+                  amounts of data from our clients in real time, primarily for reporting purposes</li>
+                <li>Collaborated with developers of a data-consuming app on the design and testing of an HTTP interface to the processed data</li>
               </ul>
             </li>
             <li>
               Adding support for Encounter-Based Reasoning
               <ul>
-                <li>A major new feature connecting the real-time natural language processor with the results of
-                  processing completed
-                  documents from a customer EHR system</li>
+                <li>Connected the real-time natural language processor with the results of
+                  processing completed documents from a customer EHR system</li>
                 <li>Required new systems to manage user and identifier mappings, configuration and credential caching,
-                  integration of JSON Web Tokens, fallback mechanisms, an additional API call for extended NLP evidence,
-                  and improved metrics, monitoring, and logging.</li>
+                  integration of JSON Web Tokens, fallback mechanisms, API call for extended NLP evidence,
+                  and improved metrics, monitoring, and logging</li>
               </ul>
             </li>
             <li>
-              Implementing the Notereader CDI Interface
+              Implementing the Notereader CDI interface
               <ul>
-                <li>An intercompany project connecting 3M/M*Modal's NLP with Epic to provide near real-time
-                  encounter-based reasoning directly in the EMR., storing and incorporating feedback from providers.
+                <li>An intercompany project, connected 3M/M*Modal's NLP with Epic to provide near real-time
+                  encounter-based reasoning directly in the EMR 
                 </li>
-                <li>Stores provider feedback, using that feedback in determining subsequent responses (Spring Data
-                  JPA/Hibernate)
+                <li>Modeled and stored provider feedback, and used that feedback in determining subsequent responses (Spring Data
+                  JPA/Hibernate, transactions)
                 </li>
               </ul>
             </li>
             <li>
               Migration to AWS
               <ul>
-                <li>This involved the creation of a library of Terraform and Ansible scripts that allows our
-                  services to be deployed across multiple environments consistently.</li>
-                  <li>Implemented new security requirements (customer data segregation, TLS between microservices)</li>
+                <li>Created a library of Terraform and Ansible scripts that allows our
+                  services to be deployed, consistently, across multiple environments</li>
+                  <li>Implemented new security requirements (automatic generation and maintenance of per-customer Postgres schemas, TLS between microservices)</li>
               </ul>
             </li>
             <li>
               Improvements to build scripts
               <ul>
                 <li>Incorporated Ansible configuration generation into a Gradle plugin to maintain consistency between local development and other environments, and to reduce risk of password exposure.</li>
-                <li>Incorporated local dockerized Mongo and Postgres databases, speeding up application startup during development by about 4x.</li>
+                <li>Dockerized application as part of the build process</li>
+                <li>Incorporated local dockerized Mongo and Postgres databases, speeding up application startup during development by about 4x</li>
+              </ul>
+            </li>
+            <li>
+              Leadership and mentoring
+              <ul>
+                <li>Conducted rigorous code review and pair programming sessions</li>
+                <li>Presented architectural overviews and technical explanations for new hires and engineers on collaborating teams</li>
+                <li>Worked with Ops to debug production problems</li>
+                <li>Provided important product behavior details, verbally and in writing/diagrams, to non-technical stakeholders</li>
+                <li>Broke down, planned, prioritized, and provided updates for projects, in collaboration with product and QA managers</li>
               </ul>
             </li>
           </ul>
@@ -180,7 +191,7 @@
     <div>
       <h4>Interactive Brokers Group, Greenwich, CT</h4>
       <div class="job-subsection">
-        <em><strong>Secure Application Developer</strong>, February 2015 to present.</em><br />
+        <em><strong>Secure Application Developer</strong>, February 2015 to July 2017.</em><br />
         Primarily Java development, with some PL/SQL. Projects included (but were not limited to):
         <ul>
           <li>
@@ -270,22 +281,23 @@
       <div class="row">
         <div class="col-sm-6">
           <ul>
-            <li>Java, varying degrees of experience with other languages (Scala, PL/SQL, JavaScript, C, ...)</li>
-            <li>Spring, Spring Boot, Spring Data JPA, Spring Cloud Stream</li>
-            <li>REST, SOAP</li>
+            <li>Java, varying degrees of experience with other general programming languages (Scala, Bash, JavaScript, C, ...)</li>
+            <li>Spring, Spring Boot, Spring Data JPA, Spring Cloud Stream, Grafana</li>
+            <li>HTTP, REST, SOAP</li>
             <li>Mongo, Postgres, Redis, Apache Kafka</li>
             <li>Java EE (Servlets, JSPs, EJBs, etc.)</li>
-            <li>Piccolo Java library for zoom-able user interfaces, Jackson, Kafka Streams</li>
-            <li>jEdit plugin development</li>
-            <li>Unix/Linux, Vi/Vim, SSH</li>
+            <li>Flyway, Jackson, Kafka Streams, Piccolo (Java library for zoom-able user interfaces), jEdit plugin development</li>
+            <li>Unix/Linux, Vi/Vim, SSH, nginx</li>
           </ul>
         </div>
         <div class="col-sm-6">
           <ul>
+            <li>Terraform, Ansible, AWS</li>
+            <li>Gradle, Maven, Ant, Intellij IDEA</li>
+            <li>JUnit, TestNG</li>
             <li>HTML, CSS, SQL</li>
             <li>Git, Mercurial, Subversion, CVS</li>
-            <li>LaTeX, MS Excel (including Analysis ToolPak), Access, Word, PowerPoint, Mathematica, Google Docs, iMovie
-            </li>
+            <li>LaTeX, MS Excel (including Analysis ToolPak), Access, Word, PowerPoint, Mathematica, Google Docs, iMovie</li>
             <li>Coq, Alloy, Lustre, ESC/Java2, Dafny</li>
           </ul>
         </div>
