@@ -33,66 +33,10 @@
 
     <div>
       <h2>Overview</h2>
-      <p>I am a software engineer with a <strong>PhD</strong> and <strong>6+ years of experience in industry</strong>
-        who is interested in writing quality code, learning new skills and applications for those skills, and solving
-        people's problems. Most recently, I have been working primarily in Java (more specifically, Spring Boot
-        microservices), though a large portion of my time is spent using supporting technologies, such as Docker,
-        Ansible, Terraform, Gradle, and Bash, and integrating with technologies such as Apache Kafka, MongoDB, Redis,
-        and PostgreSQL. While I enjoy all sorts of learning, I am particularly excited when I can pinpoint the
-        ambiguities in specifications that can derail a project, or discover a tool or technique that can make work
-        faster and more accurate.</p>
+      <p>I am a software engineer with a <strong>PhD</strong> and <strong>9+ years of experience in industry</strong>.  I continue to be interested applying my skills in writing quality code, learning new skills and systems, digging into the causes of bugs, and finding the best solution for the situation.</p>
+      <p>Most recently, I have been working primarily on Java/Spring Boot microservices, though a large portion of my time is actually spent using and/or debugging supporting technologies, such as Bash, Docker+Kubernetes, AWS, Git+Gitlab CI/CD, Maven+Gradle, Elasticsearch, PostgreSQL, MySQL, JavaScript+TypeScript, RabbitMQ, and Ruby+Rails.  Somewhat less recently, I have also extensivly used Ansible, Terraform, Kafka, MongoDB, Redis, and Scala.</p>
     </div>
 
-    <!--
-      <div>
-        <h2>Qualifications</h2>
-
-        Strong programming skills, especially in <strong>Java</strong>
-		Minimizes mutability
-		...
-	Likes to learn
-		Do you have books?  Access to online courses?  Fun programming tools?
-	Likes to help others learn
-
-	
-	Goes into detail (if need be)
-		
-
-	
-        <ul>
-          <li>
-		  
-            Strong programming and problem solving skills, especially in <strong>Java</strong>
-            <ul>
-	      <li>Recent experience developing and maintaining Spring Boot web services, integrating Apache Kafka, MongoDB, Redis, and Postgres</li>
-	      <li>Experience also with maintaining 
-		    
-              <li>Industry experience with Java EE + Oracle SQL and PL/SQL</li>
-              <li>Used Java in dissertation research</li>
-              <li>Experience with Formal Methods tools for development of correct software</li>
-            </ul>
-          </li>
-          <li>
-            Experience in designing and developing new user interfaces, especially interfaces aimed at novice users of mathematical software
-            <ul>
-              <li>Graph visualization, zoom-able UIs</li>
-              <li>IDE plugin development, buffer manipulation</li>
-              <li>Asynchronous communication with backend</li>
-            </ul>
-          </li>
-          <li>
-            Experience in designing, analyzing, and conducting tests of such interfaces with human participants
-          </li>
-          <li>
-            Teaching experience:
-            <ul>
-              <li>Developed and taught, as sole instructor, an introductory Java course in the University of Iowa Department of Computer Science</li>
-              <li>Additional teaching experience with undergraduate and graduate students as a Computer Science teaching assistant at The University of Iowa, and with children grades 4-6 as a volunteer cello instructor in the Iowa City public schools</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      -->
     <div>
       <h2>Education</h2>
       <ul>
@@ -114,12 +58,35 @@
     <div>
       <h2>Work Experience</h2>
       <div>
+        <h4>UPMC Enterprises, Pittsburgh, PA</h4>
+        <div class="job-subsection">
+          <em><strong>Senior Software Engineer</strong>, February 2022 to present</em><br />
+          Worked as part a team on the development and maintenance of a suite of microservices, "Alexandria Charts", for aggregating, searching, and 3rd party access to medical records in the UPMC Hospital System and Health Plan.  These microservices included:
+          <ul>
+            <li>
+              Document Viewer - A web app allowing users to search a patient's medical records across multiple EMR sources, view the higlighted results in multiple formats, and download them in bulk.
+            </li>
+            <li>
+              Identity Reconciliation Tool - A web app allowing medical documents from multiple sources to be linked, manually, to the same patient when there are inexact matches or inconsistencies in name, DoB, or MRN.
+            </li>
+            <li>
+              Bulk Extraction - A tool for downloading zip files of medical records, based on searches.  Was able to improve the performance of this service by more than 3x through parallelized and non-blocking IO (and in fact had to include a rate limiter).
+            </li>
+            <li>
+              Governor - A tool for transferring appropriate medical records between tenants (e.g. the provider and payer parts of UPMC).
+            </li>
+            <li>
+              Indexing - A frontend for Elasticsearch, providing a domain specific language for searches.
+            </li>
+          </ul>
+        </div>
+
         <h4> M*Modal / 3M, Pittsburgh, PA</h4>
         <p>(3M acquired M*Modal in February, 2019, integrating it into its Healthcare Information Systems Division but
           keeping the brand)</p>
         <div class="job-subsection">
 
-          <em><strong>Senior Software Engineer</strong>, July 2017 to present.</em><br />
+          <em><strong>Senior Software Engineer</strong>, July 2017 to February 2022</em><br />
           Primarily Java/Spring Boot, with heavy usage of supporting technologies, plus leadership, architectural,
           and mentoring activities. The umbrella project/product I have been responsible for is Computer Assisted
           Provider Documentation (CAPD) Services, a web service which connects a desktop client interacting with an
