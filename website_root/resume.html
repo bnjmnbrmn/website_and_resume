@@ -10,17 +10,30 @@
 </head>
 
 <body>
+  <style>
+   @media print
+   {
+     .col-sm-6 {
+       width:50%;
+       float:left;
+     }
+     .col-sm-4 {
+       width:33%;
+       float:left;
+     }
+     a[href]:after {
+       content: none !important;
+     }
+   }
+  </style>
   <div class="container">
     <div class="page-header">
       <h1>Benjamin Berman</h1>
     </div>
-    <div class="row">
+    <div row="class">
       <div class="col-sm-4 contact-info">
-
         Location: Pittsburgh, PA,<br />
         Willing to do remote work
-        <!--256 Washington Blvd, Apt 1<br/>-->
-        <!--Stamford, Connecticut 06902, USA<br/>-->
       </div>
       <div class="col-sm-4 contact-info">
         bnjmnbrmn@gmail.com
@@ -81,7 +94,7 @@
           </ul>
         </div>
 
-        <h4> M*Modal / 3M, Pittsburgh, PA</h4>
+        <h4 style="page-break-before: always"> M*Modal / 3M, Pittsburgh, PA</h4>
         <p>(3M acquired M*Modal in February, 2019, integrating it into its Healthcare Information Systems Division but
           keeping the brand)</p>
         <div class="job-subsection">
@@ -156,7 +169,7 @@
     </div>
 
     <div>
-      <h4>Interactive Brokers Group, Greenwich, CT</h4>
+      <h4 style="page-break-before: always">Interactive Brokers Group, Greenwich, CT</h4>
       <div class="job-subsection">
         <em><strong>Secure Application Developer</strong>, February 2015 to July 2017.</em><br />
         Primarily Java development, with some PL/SQL. Projects included (but were not limited to):
@@ -244,7 +257,7 @@
       </div>
     </div>
     <div>
-      <h2>Skills</h2>
+      <h2 style="page-break-before: always">Skills</h2>
       <div class="row">
         <div class="col-sm-6">
           <ul>
