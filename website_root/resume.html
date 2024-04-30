@@ -97,20 +97,19 @@
             <li>
               Revitalization of "dusty" application code:
               <ul>
-                <li>Updated Spring Boot applications to use OAuth tokens (client credentials flow with AWS Cognito) when communicating with services further "right" in the system</li>
-                <li>Updated Spring Security analysis of user tokens (from Azure Entry, previously known as Azure AD) to support authorizaton based on user groups</li>
-                <li>Made numerous library/code updates to remove security vulnerabilities in Ruby, Java, and JavaScript/TypeScript (AngularJS and Angular) code</li>
-                <li>Dockerfile updates to support development on ARM64-based and corporate TLS decryption</li>
-                <li>Updated Java from 8 and 11 to 17</li>
-                <li>Updated Spring Boot to 2.7</li>
-                <li>Migrated MySQL from 5.7 to 8.0 in AWS RDS</li>
-                <li>
-                  Migrated Elasticsearch from 7 to 8 in an AWS EKS (Kubernetes) cluster,
-                  <ul><li>Wrote Ruby scripts to perform incremental/restartable updates to a large amount of data</li></ul>
+                <li>Enumerated and prioritized code quality issues such as misleading identifiers, problematic DRY violations, missing indirection, pointless mutability, etc.
+                  <ul><li>Balanced fixing problems with feature work/not overwhelming dev and QA reviewers</li></ul>
                 </li>
-                <li>Enumerated and prioritized code readability and maintainability issues such as misleading identifiers, problematic DRY violations, missing indirection, etc.
-                  <ul><li>Balanced fixing problems with feature work and with not overwhelming dev and QA reviewers</li></ul>
+                <li>Updated Spring Boot applications to use OAuth tokens (client credentials flow with AWS Cognito) when communicating with services further into in the system</li>
+                <li>Updated Spring Security analysis of user tokens (from Azure Entry, a.k.a. Azure AD) to support authorizaton based on user groups</li>
+                <li>Made numerous updates to remove security vulnerabilities in Java, JavaScript/TypeScript (AngularJS and Angular), Ruby and Docker images
+                  <ul><li>Included backwards-incompatible updates to Java 17 and Spring Boot 2.7, requiring code changes</li></ul>
                 </li>
+                <li>Updated Dockerfiles to support development on ARM64-based computers, in a corporate environment with MitM TLS decryption</li>
+                <li>Migrated databases, including MySQL from 5.7 to 8.0 in AWS RDS, and Elasticsearch from 7 to 8 in AWS EKS (Kubernetes)
+                  <ul><li>For the Elasticsearch migration, wrote Ruby scripts to perform updates in an incremental/restartable way, since updating the large amount of data required several days and network connectivity would sometimes fail</li></ul>
+                </li>
+                <li>Debugged failing tests and Kubernetes deployments in and out of the Gitlab CI/CD pipeline</li>
               </ul>
             </li>
         <li>
@@ -176,8 +175,7 @@
           and mentoring activities. The umbrella project/product I have been responsible for is Computer Assisted
           Provider Documentation (CAPD) Services, a web service which connects a desktop client interacting with an
           Electronic Medical Record (EMR) system, such as Epic or Cerner, with a real-time natural language
-          processor, providing layers for security and feedback customization. Activities related to this have
-          included:
+          processor, providing layers for security and feedback customization. Activities related to this included:
           <ul>
             <li>
               Designing and developing CAPD Data Services
@@ -333,23 +331,24 @@
       <div class="row">
         <div class="col-sm-6">
           <ul>
-            <li>Java, varying degrees of experience with other general programming languages (Scala, Bash, JavaScript, C, ...)</li>
-            <li>Spring, Spring Boot, Spring Data JPA, Spring Cloud Stream, Grafana</li>
-            <li>HTTP, REST, SOAP</li>
-            <li>Mongo, Postgres, Redis, Apache Kafka</li>
-            <li>Java EE (Servlets, JSPs, EJBs, etc.)</li>
+            <li>Java (primary), Bash, SQL, Ruby, JavaScript, TypeScript, Scala, C, Groovy, Python (some) </li>
+            <li>Spring, Spring Boot, Spring Data JPA, Spring Cloud Stream</li>
+            <li>HTTP, REST, SOAP, node, npm</li>
+            <li>MongoDB, PostgreSQL, MySQL, Redis, Kafka, Elasticsearch</li>
+            <li>Java (Jakarta) EE (Servlets, JPA, JSPs, EJBs, etc.), Hibernate,</li>
             <li>Flyway, Jackson, Kafka Streams, Piccolo (Java library for zoom-able user interfaces), jEdit plugin development</li>
-            <li>Unix/Linux, Vi/Vim, SSH, nginx</li>
+            <li>Unix/Linux, Vi/Vim, Emacs, SSH, nginx, gpg, openssl</li>
           </ul>
         </div>
         <div class="col-sm-6">
           <ul>
-            <li>Terraform, Ansible, AWS</li>
+            <li>Docker, Kubernetes, Gitlab CI/CD</li>
+            <li>Terraform, Ansible, AWS (CCP certified), Grafana, Graphite</li>
             <li>Gradle, Maven, Ant, Intellij IDEA</li>
             <li>JUnit, TestNG</li>
-            <li>HTML, CSS, SQL</li>
+            <li>HTML, CSS, Angular, AngularJS</li>
+            <li>LaTeX, JSON, YAML, XML, Markdown, Org Mode</li>
             <li>Git, Mercurial, Subversion, CVS</li>
-            <li>LaTeX, MS Excel (including Analysis ToolPak), Access, Word, PowerPoint, Mathematica, Google Docs, iMovie</li>
             <li>Coq, Alloy, Lustre, ESC/Java2, Dafny</li>
           </ul>
         </div>
@@ -377,9 +376,6 @@
       </p>
       <br />
     </div>
-    <!--<div>-->
-    <!--<h2>Other</h2>-->
-    <!--</div>-->
 
   </div>
 
