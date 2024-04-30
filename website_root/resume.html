@@ -83,7 +83,7 @@
               Identity Reconciliation Tool - A web app allowing medical documents from multiple sources to be linked, manually, to the same patient when there are inexact matches or inconsistencies in name, DoB, or MRN.
             </li>
             <li>
-              Bulk Extraction - A tool for downloading zip files of medical records, based on searches.  Was able to improve the performance of this service by more than 3x through parallelized and non-blocking IO (and in fact had to include a rate limiter).
+              Bulk Extraction - A tool for downloading zip files of medical records, based on searches.
             </li>
             <li>
               Governor - A tool for transferring appropriate medical records between tenants (e.g. the provider and payer parts of UPMC).
@@ -92,7 +92,79 @@
               Indexing - A frontend for Elasticsearch, providing a domain specific language for searches.
             </li>
           </ul>
-        </div>
+          Specific activities included
+          <ul>
+            <li>
+              Revitalization of "dusty" application code:
+              <ul>
+                <li>Updated Spring Boot applications to use OAuth tokens (client credentials flow with AWS Cognito) when communicating with services further "right" in the system</li>
+                <li>Updated Spring Security analysis of user tokens (from Azure Entry, previously known as Azure AD) to support authorizaton based on user groups</li>
+                <li>Made numerous library/code updates to remove security vulnerabilities in Ruby, Java, and JavaScript/TypeScript (AngularJS and Angular) code</li>
+                <li>Dockerfile updates to support development on ARM64-based and corporate TLS decryption</li>
+                <li>Updated Java from 8 and 11 to 17</li>
+                <li>Updated Spring Boot to 2.7</li>
+                <li>Migrated MySQL from 5.7 to 8.0 in AWS RDS</li>
+                <li>
+                  Migrated Elasticsearch from 7 to 8 in an AWS EKS (Kubernetes) cluster,
+                  <ul><li>Wrote Ruby scripts to perform incremental/restartable updates to a large amount of data</li></ul>
+                </li>
+                <li>Enumerated and prioritized code readability and maintainability issues such as misleading identifiers, problematic DRY violations, missing indirection, etc.
+                  <ul><li>Balanced fixing problems with feature work and with not overwhelming dev and QA reviewers</li></ul>
+                </li>
+              </ul>
+            </li>
+        <li>
+          Project planning:
+          <ul>
+            <li>Reviewed development roadmap, avoiding unnecessary work and prioritizing work most likely to be productive</li>
+            <li>
+            Actively participated in "sprint zero" (ticket creation) activities
+            <ul><li>Helped to avoid overspecification/underspecification in tickets</li></ul>
+            </li>
+            <li>Developed plans to automate product packaging and deployment</li>
+          </ul>
+        </li>
+        <li>
+          Application Performance:
+          <ul>
+            <li>Debugged performance bottlenecks using VisualVM, logging</li>
+            <li>Sped up "Bulk Extraction" service by at least 3x (had to apply rate limiting), using non-blocking/reactive programming</li>
+          </ul>
+        </li>
+        <li>
+          Development Process:
+          <ul>
+            <li>Demonstrated speed up of Gitlab CI/CD jobs (e.g. 8x), while improving security</li>
+            <li>Automated Postman tests via newman cli tool</li>
+            <li>
+              Handled security issues in the development process
+              <ul>
+                <li>Reported and mitigated weaknesses in test coverage</li>
+                <li>Updated deployment scripts to avoid mixups between development, production, and other environments</li>
+                <li>Avoided credentials leaking into Docker image layers and Git repositories</li>
+              </ul>
+            </li>
+            <li>
+              Managed context switching between projects
+              <ul>
+                <li>Updated READMEs to reduce ramp-up time when we switched back to a project a year later</li>
+                <li>Refactored development/deployment scripts for improved readability</li>
+              </ul>
+            </li>
+            <li>Reviewed colleagues' code and mentored junior colleagues</li>
+          </ul>
+        </li>
+        <li>
+          Other:
+          <ul>
+            <li>Shared knowledge with team in formal and informal settings</li>
+            <li>Presented current work to wider organization, and solicited feedback</li>
+            <li>Studied for, and passed, the AWS Certified Cloud Practitioner exam</li>
+          </ul>
+        </li>
+
+      </ul>
+     </div>
 
         <h4 style="page-break-before: always"> M*Modal / 3M, Pittsburgh, PA</h4>
         <p>(3M acquired M*Modal in February, 2019, integrating it into its Healthcare Information Systems Division but
