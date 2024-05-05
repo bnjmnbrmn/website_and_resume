@@ -83,7 +83,7 @@
                   <ul><li>Balanced fixing problems with feature work/not overwhelming dev and QA reviewers</li></ul>
                 </li>
                 <li>Updated Spring Boot applications to use OAuth tokens (client credentials flow with AWS Cognito) when communicating with services further into in the system</li>
-                <li>Updated Spring Security analysis of user tokens (from Azure Entry, a.k.a. Azure AD) to support authorizaton based on user groups</li>
+                <li>Updated Spring Security analysis of user tokens (from Azure Entra, a.k.a. Azure AD) to support authorizaton based on user groups</li>
                 <li>Made numerous updates to remove security vulnerabilities in Java, JavaScript/TypeScript (AngularJS and Angular), Ruby and Docker images
                   <ul><li>Included backwards-incompatible updates to Java 17 and Spring Boot 2.7, requiring code changes</li></ul>
                 </li>
@@ -189,6 +189,14 @@
               </ul>
             </li>
             <li>
+              Migration from MongoDB to PostgreSQL
+              <ul>
+                <li>Took a low-risk, zero-downtime approach that wrote to both databases for a period of months before
+                making a final cutover</li>
+                <li>Carefully refactored existing code to ensure equivalent data would be sent to the new database</li>
+              </ul>
+            </li>
+            <li>
               Migration to AWS
               <ul>
                 <li>Created a library of Terraform and Ansible scripts that allows our
@@ -258,7 +266,7 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li style="page-break-before: always">
             Client for OCR web service (SOAP) for processing passport images
             <ul>
               <li>Decrypted image files uploaded by users</li>
@@ -271,7 +279,7 @@
     </div>
 
     <div>
-      <h4 style="page-break-before: always">The University of Iowa, Iowa City, IA</h4>
+      <h4>The University of Iowa, Iowa City, IA</h4>
       <div class="job-subsection">
         <em><strong>Instructor</strong>, spring semester, 2014.</em><br />
         Introductory Java course for undergraduate and graduate students
