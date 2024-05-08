@@ -47,7 +47,8 @@
     <div>
       <h2>Overview</h2>
       <p>I am a software engineer with a <strong>PhD</strong> and <strong>9+ years of experience in industry</strong>.  I continue to love writing new high-quality code, debugging and improving existing code, learning new skills and systems, helping my colleagues and our customers, and finding the right solution for the situation.</p>
-      <p>Most recently, I have been working in Java on Spring Boot microservices, creating REST APIs, using SQL and NoSQL databases, and dealing with issues related to deployment, infrastructure, Big Data, performance (latency, throughput/bandwidth, resource consumption), reliability (zero-downtime deployments, logging, monitoring, testing, configuration minimization, code readability), security (authorization, authentication, encryption, availability, integrity), DevOps (automation, repeatability, continuous integration), and developer productivity.  Some specific technologies I've used professionally include:  Bash, Docker, Kubernetes, AWS, Git, Gitlab CI/CD, Maven, Gradle, Elasticsearch, PostgreSQL, MySQL, OAuth, JavaScript, TypeScript, Ruby, Ansible, Terraform, Kafka, MongoDB, Redis, and Scala.</p>
+      <p>General problems I've enjoyed solving relate to microservices, REST APIs, data storage (sharding, transactions, high availability, SQL and NoSQL), reliable and repeatable deployment with zero downtime, cloud infrastructure (IaC, provisioning, AWS, cost tradeoffs), streaming data, performance (latency, throughput/bandwidth, resource consumption, parallization), reliability (logging, monitoring, testing, configuration minimization, code readability, redundancy, debugging of concurrency and memory issues), security (authorization, authentication, encryption, availability, integrity), DevOps (automation, continuous integration, containerization, orchestration), communication (technical and semi-technical presentations, documentation, multi-team coordination) and developer productivity (build speed, build tools, local environment setup, mentoring, knowledge sharing).</p>
+      <p>Some specific technologies I've used professionally include Java, Spring Boot, SQL databases, NoSQL databases, Bash, Docker, Kubernetes, AWS, Git, Gitlab CI/CD, Maven, Gradle, Elasticsearch, PostgreSQL, MySQL, OAuth, JavaScript, TypeScript, Ruby, Ansible, Terraform, Kafka, MongoDB, Redis, and Scala.</p>
     </div>
 
     <div>
@@ -56,95 +57,12 @@
         <h4>UPMC Enterprises, Pittsburgh, PA</h4>
         <div class="job-subsection">
           <em><strong>Senior Software Engineer</strong>, February 2022 to April 2024</em><br />
-          Worked as part a team on the development and maintenance of a suite of microservices, "Alexandria Charts", for aggregating, searching, and 3rd party access to medical records in the UPMC Hospital System and Health Plan.  <!--These microservices included:
-          <ul>
-            <li>
-              Document Viewer - A web app allowing users to search a patient's medical records across multiple EMR sources, view the higlighted results in multiple formats, and download them in bulk.
-            </li>
-            <li>
-              Identity Reconciliation Tool - A web app allowing medical documents from multiple sources to be linked, manually, to the same patient when there are inexact matches or inconsistencies in name, DoB, or MRN.
-            </li>
-            <li>
-              Bulk Extraction - A tool for downloading zip files of medical records, based on searches.
-            </li>
-            <li>
-              Governor - A tool for transferring appropriate medical records between tenants (e.g. the provider and payer parts of UPMC).
-            </li>
-            <li>
-              Indexing - A frontend for Elasticsearch, providing a domain specific language for searches.
-            </li>
-          </ul>-->
-          Specific activities included
-          <ul>
-            <li>
-              Revitalization of "dusty" application code:
-              <ul>
-                <li>Enumerated and prioritized code quality issues such as misleading identifiers, problematic DRY violations, missing indirection, pointless mutability, etc.
-                  <ul><li>Balanced fixing problems with feature work/not overwhelming dev and QA reviewers</li></ul>
-                </li>
-                <li>Updated Spring Boot applications to use OAuth tokens (client credentials flow with AWS Cognito) when communicating with services further into in the system</li>
-                <li>Updated Spring Security analysis of user tokens (from Azure Entra, a.k.a. Azure AD) to support authorizaton based on user groups</li>
-                <li>Made numerous updates to remove security vulnerabilities in Java, JavaScript/TypeScript (AngularJS and Angular), Ruby and Docker images
-                  <ul><li>Included backwards-incompatible updates to Java 17 and Spring Boot 2.7, requiring code changes</li></ul>
-                </li>
-                <li>Updated Dockerfiles to support development on ARM64-based computers, in a corporate environment with MitM TLS decryption</li>
-                <li>Migrated databases, including MySQL from 5.7 to 8.0 in AWS RDS, and Elasticsearch from 7 to 8 in AWS EKS (Kubernetes)
-                  <ul><li>For the Elasticsearch migration, wrote Ruby scripts to perform updates in an incremental/restartable way, since updating the large amount of data required several days and network connectivity would sometimes fail</li></ul>
-                </li>
-                <li>Debugged failing tests and Kubernetes deployments in and out of the Gitlab CI/CD pipeline</li>
-              </ul>
-            </li>
-        <li style="page-break-before: always">
-          Project planning:
-          <ul>
-            <li>Reviewed development roadmap, avoiding unnecessary work and prioritizing work most likely to be productive</li>
-            <li>
-            Actively participated in "sprint zero" (ticket creation) activities
-            <ul><li>Helped to avoid overspecification/underspecification in tickets</li></ul>
-            </li>
-            <li>Developed plans to automate product packaging and deployment</li>
-          </ul>
-        </li>
-        <li>
-          Application Performance:
-          <ul>
-            <li>Debugged performance bottlenecks using VisualVM, logging</li>
-            <li>Sped up "Bulk Extraction" service by at least 3x (had to apply rate limiting), using non-blocking/reactive programming</li>
-          </ul>
-        </li>
-        <li>
-          Development Process:
-          <ul>
-            <li>Demonstrated speed up of Gitlab CI/CD jobs (e.g. 8x), while improving security</li>
-            <li>Automated Postman tests via newman cli tool</li>
-            <li>
-              Handled security issues in the development process
-              <ul>
-                <li>Reported and mitigated weaknesses in test coverage</li>
-                <li>Updated deployment scripts to avoid mixups between development, production, and other environments</li>
-                <li>Avoided credentials leaking into Docker image layers and Git repositories</li>
-              </ul>
-            </li>
-            <li>
-              Managed context switching between projects
-              <ul>
-                <li>Updated READMEs to reduce ramp-up time when we switched back to a project a year later</li>
-                <li>Refactored development/deployment scripts for improved readability</li>
-              </ul>
-            </li>
-            <li>Reviewed colleagues' code and mentored junior colleagues</li>
-          </ul>
-        </li>
-        <li>
-          Other:
-          <ul>
-            <li>Shared knowledge with team in formal and informal settings</li>
-            <li>Presented current work to wider organization, and solicited feedback</li>
-            <li>Studied for, and passed, the AWS Certified Cloud Practitioner exam</li>
-          </ul>
-        </li>
+          Engineer on the Alexandria Charts medical records platform team. The main challenge in this position was the <strong>wide range</strong> of applications/services to be upgraded, improved, and debugged.  I was also heavily involved in improving the security, reliability, and performance of our build and deployment processes.
+<p>
+Applications/microservices included: "Document Viewer", a web app supporting searching patients' medical records across multiple EMR sources, viewing the highlighted results in multiple formats, and downloading the records in bulk; "Identity Reconciliation Tool", a web app allowing medical documents from multiple EMRs to be linked to the same patient; "Bulk Extraction", a tool for downloading zip files of medical records, based on searches (I improved performance by more than 3x); "Governor", a tool for appropriately transferring medical records between tenants; and "Indexing Service", a frontend for Elasticsearch, providing a domain specific language for searches (work included a major upgrade from Elasticsearch 7 to 8 in Kubernetes/EKS)
+<p>
+Technologies used in these projects included: Java, Spring Boot, Docker, Kubernetes, AWS (Secrets Manager, EKS, Parameter Store, S3, Cognito, RDS, SQS), Bash, Elasticsearch, PostgreSQL, MySQL, OAuth, JavaScript, AngularJS, TypeScript, Angular, Ruby, Ruby on Rails, OAuth, Azure AD/Entra, Git, Gitlab, Gitlab CI/CD, REST, RabbitMQ, Postman, newman, treetop parsing DSL.
 
-      </ul>
      </div>
 
         <h4> M*Modal / 3M, Pittsburgh, PA</h4>
@@ -177,7 +95,7 @@
                   and improved metrics, monitoring, and logging</li>
               </ul>
             </li>
-            <li style="page-break-before: always">
+            <li>
               Implementing the Notereader CDI interface
               <ul>
                 <li>An intercompany project, connected 3M/M*Modal's NLP with Epic to provide near real-time
@@ -266,7 +184,7 @@
               </li>
             </ul>
           </li>
-          <li style="page-break-before: always">
+          <li>
             Client for OCR web service (SOAP) for processing passport images
             <ul>
               <li>Decrypted image files uploaded by users</li>
