@@ -47,8 +47,8 @@
     <div>
       <h2>Overview</h2>
       <p>I am a software engineer with a <strong>PhD</strong> and <strong>9+ years of experience in industry</strong>.  I continue to love writing new high-quality code, debugging and improving existing code, learning new skills and systems, helping my colleagues and our customers, and finding the right solution for the situation.</p>
-      <p>General problems I've enjoyed solving relate to microservices, REST APIs, data storage (sharding, transactions, high availability, SQL and NoSQL), reliable and repeatable deployment with zero downtime, cloud infrastructure (IaC, provisioning, AWS, cost tradeoffs), streaming data, performance (latency, throughput/bandwidth, resource consumption, parallization), reliability (logging, monitoring, testing, configuration minimization, code readability, redundancy, debugging of concurrency and memory issues), security (authorization, authentication, encryption, availability, integrity), DevOps (automation, continuous integration, containerization, orchestration), communication (technical and semi-technical presentations, documentation, multi-team coordination) and developer productivity (build speed, build tools, local environment setup, mentoring, knowledge sharing).</p>
-      <p>Some specific technologies I've used professionally include Java, Spring Boot, Bash, Docker, Kubernetes, AWS, Git, Gitlab CI/CD, Maven, Gradle, Elasticsearch, PostgreSQL, MySQL, OAuth, JavaScript, TypeScript, Ruby, Ansible, Terraform, Kafka, MongoDB, Redis, and Scala.</p>
+      <p>General problems I've enjoyed solving relate to microservices, REST APIs, streaming data , data storage (sharding, transactions, high availability, SQL and NoSQL), reliable and repeatable deployment with zero downtime, cloud infrastructure (IaC, provisioning, AWS, cost tradeoffs),  performance (latency, throughput/bandwidth, resource consumption, parallization), reliability (logging, monitoring, testing, configuration minimization, code readability, redundancy, debugging of concurrency and memory issues), security (authorization, authentication, encryption, availability, integrity), DevOps (automation, continuous integration, containerization, orchestration), communication (technical and semi-technical presentations, documentation, multi-team coordination) and developer productivity (build speed, build tools, local environment setup, mentoring, knowledge sharing).</p>
+      <p>Some specific technologies I've used professionally include Java, Spring Boot, Kafka and Kafka Streams (please see experience with CAPD Data Services at 3M/M*Modal), Scala, Bash, Docker, Kubernetes, AWS, Git, Gitlab CI/CD, Maven, Gradle, Elasticsearch, PostgreSQL, MySQL, OAuth, JavaScript, TypeScript, Ruby, Ansible, Terraform,  MongoDB, and Redis.</p>
     </div>
 
     <div>
@@ -80,9 +80,25 @@ Technologies used in these projects included: Java, Spring Boot, Docker, Kuberne
             <li>
               Designing and developing CAPD "Data Services"
               <ul>
-                <li>Created new microservices, the core of which uses Apache Kafka and the Kafka Streams library to gather and process large
-                  amounts of data from our clients in real time, primarily for reporting purposes</li>
-                <li>Collaborated with developers of a data-consuming app on the design and testing of an HTTP interface to the processed data</li>
+                <li>Primary designer and implementer of a greenfield set of microservices, the core of which used Apache Kafka and the Kafka Streams library to gather and process ~1000 requests/second of data from our clients in real time, primarily for reporting purposes</li>
+                <li>Worked across teams (the desktop application developers generating data, the reporting application developers displaying the processed data, the maintainers of the legacy batch ETL system, and product/sales) in a high pressure situation to explain and resolve critical ambiguities:
+                  <ul>
+                    <li>
+                      Sessions -- do they resume when a provider comes back from lunch?
+                    </li>
+                    <li>
+                      User facing alert resolutions -- what state transitions count? How should they be debounced?
+                    </li>
+                    <li>
+                      Document drafts vs final documents
+                    </li>
+                  </ul>
+                </li>
+                <li>Aggregated, as well as mapped/filtered, incoming messages</li>
+                <li>Dealt with out-of-order messages, client restarts, and network interruptions</li>
+                <li>Included an HTTP API, backed by PostgreSQL, to allow paginated access to both historical and current results</li>
+                <li>Wrote clear, concise, functional code to help guarantee correctness</li>
+                <li>Successfully deployed to multiple AWS environments, including production</li>
               </ul>
             </li>
             <li>
