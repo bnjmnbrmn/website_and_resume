@@ -47,8 +47,8 @@
     <div>
       <h2>Overview</h2>
       <p>I am a software engineer with a <strong>PhD</strong> and <strong>9+ years of experience in industry</strong>.  I continue to love writing new high-quality code, debugging and improving existing code, learning new skills and systems, helping my colleagues and our customers, and finding the right solution for the situation.</p>
-      <p>General problems I've enjoyed solving relate to microservices, REST APIs, streaming data , data storage (sharding, transactions, high availability, SQL and NoSQL), reliable and repeatable deployment with zero downtime, cloud infrastructure (IaC, provisioning, AWS, cost tradeoffs),  performance (latency, throughput/bandwidth, resource consumption, parallization), reliability (logging, monitoring, testing, configuration minimization, code readability, redundancy, debugging of concurrency and memory issues), security (authorization, authentication, encryption, availability, integrity), DevOps (automation, continuous integration, containerization, orchestration), communication (technical and semi-technical presentations, documentation, multi-team coordination) and developer productivity (build speed, build tools, local environment setup, mentoring, knowledge sharing).</p>
-      <p>Some specific technologies I've used professionally include Java, Spring Boot, Kafka and Kafka Streams (please see experience with CAPD Data Services at 3M/M*Modal), Scala, Bash, Docker, Kubernetes, AWS, Git, Gitlab CI/CD, Maven, Gradle, Elasticsearch, PostgreSQL, MySQL, OAuth, JavaScript, TypeScript, Ruby, Ansible, Terraform,  MongoDB, and Redis.</p>
+      <p>General problems I've enjoyed solving relate to <strong>microservices</strong>, <strong>REST APIs</strong>, <strong>streaming data</strong>, <strong>data storage</strong> (sharding, transactions, high availability, SQL and NoSQL), reliable and repeatable <strong>deployment</strong> with zero downtime, <strong>cloud infrastructure</strong> (IaC, provisioning, AWS, cost tradeoffs), <strong>performance</strong> (latency, throughput/bandwidth, resource consumption, parallelization), <strong>reliability</strong> (logging, monitoring, testing, configuration minimization, code readability, redundancy, debugging of concurrency and memory issues), <strong>security</strong> (authorization, authentication, encryption, availability, integrity), <strong>DevOps</strong> (automation, continuous integration, containerization), <strong>communication</strong> (technical and semi-technical presentations, documentation, multi-team coordination) and <strong>developer productivity</strong> (build speed, build tools, local environment setup, mentoring, knowledge sharing).</p>
+<!--      <p>Some specific technologies I've used professionally include Java, Spring Boot, Kafka and Kafka Streams, Scala, Bash, Docker, Kubernetes, AWS, Git, Gitlab CI/CD, Maven, Gradle, Elasticsearch, PostgreSQL, MySQL, OAuth, JavaScript, TypeScript, Ruby, Ansible, Terraform, MongoDB, and Redis.</p>-->
     </div>
 
     <div>
@@ -57,11 +57,17 @@
         <h4>UPMC Enterprises, Pittsburgh, PA</h4>
         <div class="job-subsection">
           <em><strong>Senior Software Engineer</strong>, February 2022 to April 2024</em><br />
-          Engineer on the Alexandria Charts medical records platform team. The main challenge in this position was the <strong>wide range</strong> of applications/services to be upgraded, improved, and debugged.  I was also heavily involved in improving the security, reliability, and performance of our build and deployment processes.
-<p>
-Applications/microservices included: "Document Viewer", a web app supporting searching patients' medical records across multiple EMR sources, viewing the highlighted results in multiple formats, and downloading the records in bulk; "Identity Reconciliation Tool", a web app allowing medical documents from multiple EMRs to be linked to the same patient; "Bulk Extraction", a tool for downloading zip files of medical records, based on searches (I improved performance by more than 3x); "Governor", a tool for appropriately transferring medical records between tenants; and "Indexing Service", a frontend for Elasticsearch, providing a domain specific language for searches (work included a major upgrade from Elasticsearch 7 to 8 in Kubernetes/EKS)
-<p>
-Technologies used in these projects included: Java, Spring Boot, Docker, Kubernetes, AWS (Secrets Manager, EKS, Parameter Store, S3, Cognito, RDS, SQS), Bash, Elasticsearch, PostgreSQL, MySQL, OAuth, JavaScript, AngularJS, TypeScript, Angular, Ruby, Ruby on Rails, OAuth, Azure AD/Entra, Git, Gitlab, Gitlab CI/CD, REST, RabbitMQ, Postman, newman, treetop parsing DSL.
+          Engineer on the Alexandria Charts medical records platform team. The main challenge in this position was the <strong>wide range</strong> of applications/services to be upgraded, improved, and debugged. Highlights from my time here included:
+          <ul>
+            <li>Using Java reactive streams to improve document download speeds by more than 3x</li>
+            <li>Debugging our CI/CD pipeline to significantly improve job completion times (e.g. 8x)</li>
+            <li>A (WIP) system leveraging docker containers to greatly simplify deployment for new customers</li>
+          </ul>
+
+<!--<p>-->
+<!--Applications/microservices included: "Document Viewer", a web app supporting searching patients' medical records across multiple EMR sources, viewing the highlighted results in multiple formats, and downloading the records in bulk; "Identity Reconciliation Tool", a web app allowing medical documents from multiple EMRs to be linked to the same patient; "Bulk Extraction", a tool for downloading zip files of medical records, based on searches (I improved performance by more than 3x); "Governor", a tool for appropriately transferring medical records between tenants; and "Indexing Service", a frontend for Elasticsearch, providing a domain specific language for searches (work included a major upgrade from Elasticsearch 7 to 8 in Kubernetes/EKS)-->
+<!--<p>-->
+<!--Technologies used in these projects included: Java, Spring Boot, Docker, Kubernetes, AWS (Secrets Manager, EKS, Parameter Store, S3, Cognito, RDS, SQS), Bash, Elasticsearch, PostgreSQL, MySQL, OAuth, JavaScript, AngularJS, TypeScript, Angular, Ruby, Ruby on Rails, OAuth, Azure AD/Entra, Git, Gitlab, Gitlab CI/CD, REST, RabbitMQ, Postman, newman, treetop parsing DSL.-->
 
      </div>
 
@@ -80,8 +86,8 @@ Technologies used in these projects included: Java, Spring Boot, Docker, Kuberne
             <li>
               Designing and developing CAPD "Data Services"
               <ul>
-                <li>Primary designer and implementer of a greenfield set of microservices, the core of which used Apache Kafka and the Kafka Streams library to gather and process ~1000 requests/second of data from our clients in real time, primarily for reporting purposes</li>
-                <li>Worked across teams (the desktop application developers generating data, the reporting application developers displaying the processed data, the maintainers of the legacy batch ETL system, and product/sales) in a high pressure situation to explain and resolve critical ambiguities:
+                <li>Primary designer and implementer of a greenfield set of microservices, the core of which used Apache Kafka and the Kafka Streams library to process and aggregate data from ~1000 req/second in real time, ensuring accurate reporting</li>
+                <li>Worked across teams (desktop application developers generating data, reporting application developers displaying processed data, batch ETL maintainers, and product) in a high pressure situation to resolve critical ambiguities:
                   <ul>
                     <li>
                       Sessions -- do they resume when a provider comes back from lunch?
@@ -90,46 +96,44 @@ Technologies used in these projects included: Java, Spring Boot, Docker, Kuberne
                       User facing alert resolutions -- what state transitions count? How should they be debounced?
                     </li>
                     <li>
-                      Document drafts vs final documents
+                      Document drafts vs. final documents
                     </li>
                   </ul>
                 </li>
-                <li>Aggregated, as well as mapped/filtered, incoming messages</li>
-                <li>Dealt with out-of-order messages, client restarts, and network interruptions</li>
-                <li>Included an HTTP API, backed by PostgreSQL, to allow paginated access to both historical and current results</li>
-                <li>Wrote clear, concise, functional code to help guarantee correctness</li>
-                <li>Successfully deployed to multiple AWS environments, including production</li>
+<!--                <li>Aggregated, as well as mapped/filtered, incoming messages</li>-->
+<!--                <li>Dealt with out-of-order messages, client restarts, and network interruptions</li>-->
+                <li>Included an HTTP API allowing paginated access to historical and current results</li>
+                <li>Leveraged functional programming techniques to help guarantee correctness</li>
+                <li>Successfully managed deployment to multiple AWS environments, including production</li>
               </ul>
             </li>
             <li>
-              Adding support for Encounter-Based Reasoning
+              Adding support for "Encounter-Based Reasoning"
               <ul>
-                <li>Connected the real-time natural language processor with the results of
-                  processing completed documents from a customer EHR system</li>
-                <li>Required new systems to manage user and identifier mappings, configuration and credential caching,
-                  integration of JSON Web Tokens, fallback mechanisms, API call for extended NLP evidence,
+                <li>Connected CAPD's real-time NLP service with previous analysis of documents for a given patient visit</li>
+                <li>Project required management of identifier mappings, configuration and credential caching,
+                  integration of OAuth/JWTs, fallback mechanisms, additional API calls for NLP evidence,
                   and improved metrics, monitoring, and logging</li>
               </ul>
             </li>
-            <li>
-              Implementing the Notereader CDI interface
-              <ul>
-                <li>An intercompany project, connected 3M/M*Modal's NLP with Epic to provide near real-time
-                  encounter-based reasoning directly in the EMR 
-                </li>
-                <li>Modeled and stored provider feedback, and used that feedback in determining subsequent responses (Spring Data
-                  JPA/Hibernate, transactions)
-                </li>
-              </ul>
-            </li>
-            <li>
-              Migration from MongoDB to PostgreSQL
-              <ul>
-                <li>Took a low-risk, zero-downtime approach that wrote to both databases for a period of months before
-                making a final cutover</li>
-                <li>Carefully refactored existing code to ensure equivalent data would be sent to the new database</li>
-              </ul>
-            </li>
+<!--            <li>-->
+<!--              Implementing the Notereader CDI interface-->
+<!--              <ul>-->
+<!--                <li>An inter-company project, connecting 3M/M*Modal's NLP with Epic. Included filtering based on provider feedback.-->
+<!--                </li>-->
+<!--&lt;!&ndash;                <li>Modeled and stored provider feedback, and used that feedback in determining subsequent responses (Spring Data&ndash;&gt;-->
+<!--&lt;!&ndash;                  JPA/Hibernate, transactions)&ndash;&gt;-->
+<!--&lt;!&ndash;                </li>&ndash;&gt;-->
+<!--              </ul>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              Migration from MongoDB to PostgreSQL-->
+<!--              <ul>-->
+<!--                <li>Took a low-risk, zero-downtime approach that wrote to both databases for a period of months before-->
+<!--                making a final cutover</li>-->
+<!--                <li>Carefully refactored existing code to ensure equivalent data would be sent to the new database</li>-->
+<!--              </ul>-->
+<!--            </li>-->
             <li>
               Migration to AWS
               <ul>
@@ -138,24 +142,24 @@ Technologies used in these projects included: Java, Spring Boot, Docker, Kuberne
                   <li>Implemented new security requirements (automatic generation and maintenance of per-customer Postgres schemas, TLS between microservices)</li>
               </ul>
             </li>
-            <li>
-              Improvements to build scripts
-              <ul>
-                <li>Incorporated Ansible configuration generation into a Gradle plugin to maintain consistency between local development and other environments, and to reduce risk of password exposure.</li>
-                <li>Dockerized application as part of the build process</li>
-                <li>Incorporated local dockerized Mongo and Postgres databases, speeding up application startup during development by about 4x</li>
-              </ul>
-            </li>
-            <li>
-              Leadership and mentoring
-              <ul>
-                <li>Conducted rigorous code review and pair programming sessions</li>
-                <li>Presented architectural overviews and technical explanations for new hires and engineers on collaborating teams</li>
-                <li>Worked with Ops to debug production problems</li>
-                <li>Provided important product behavior details, verbally and in writing/diagrams, to non-technical stakeholders</li>
-                <li>Broke down, planned, prioritized, and provided updates for projects, in collaboration with product and QA managers</li>
-              </ul>
-            </li>
+<!--            <li>-->
+<!--              Improvements to build scripts-->
+<!--              <ul>-->
+<!--                <li>Incorporated Ansible configuration generation into a Gradle plugin to maintain consistency between local development and other environments, and to reduce risk of password exposure.</li>-->
+<!--                <li>Dockerized application as part of the build process</li>-->
+<!--                <li>Incorporated local dockerized Mongo and Postgres databases, speeding up application startup during development by about 4x</li>-->
+<!--              </ul>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              Leadership and mentoring-->
+<!--              <ul>-->
+<!--                <li>Conducted rigorous code review and pair programming sessions</li>-->
+<!--                <li>Presented architectural overviews and technical explanations for new hires and engineers on collaborating teams</li>-->
+<!--                <li>Worked with Ops to debug production problems</li>-->
+<!--                <li>Provided important product behavior details, verbally and in writing/diagrams, to non-technical stakeholders</li>-->
+<!--                <li>Broke down, planned, prioritized, and provided updates for projects, in collaboration with product and QA managers</li>-->
+<!--              </ul>-->
+<!--            </li>-->
           </ul>
         </div>
       </div>
@@ -166,47 +170,47 @@ Technologies used in these projects included: Java, Spring Boot, Docker, Kuberne
       <h4>Interactive Brokers Group, Greenwich, CT</h4>
       <div class="job-subsection">
         <em><strong>Secure Application Developer</strong>, February 2015 to July 2017.</em><br />
-        Primarily Java development, with some PL/SQL. Projects included (but were not limited to):
+        Primarily Java/J2EE development, with some PL/SQL. Projects included:
         <ul>
           <li>
-            File-based access to account management system
-            <ul>
-              <li>Processed XML files allowing $1,000,000,000+ clients to create batch requests for wire withdrawals,
-                deposit notifications, position transfers, etc.; generated XML response files</li>
-              <li>Wrote XML schema specification files provided to clients</li>
-              <li>Created a web interface allowing users to
-                <ul>
-                  <li>view the statuses of sorted and filtered instructions</li>
-                  <li>upload and initiate processing of new files after providing 2nd factor credentials</li>
-                </ul>
-              </li>
-              <li>Encrypted and signed files uploaded through the web interface</li>
-              <li>Refactored system to allow non-file instruction sources (e.g. SWIFT messages)</li>
-              <li>Designed and implemented fine-grained authorization system</li>
-            </ul>
+            Signed/encrypted file-based access to the account management system
+<!--            <ul>-->
+<!--              <li>Processed XML files allowing $1,000,000,000+ clients to create batch requests for wire withdrawals,-->
+<!--                deposit notifications, position transfers, etc.; generated XML response files</li>-->
+<!--              <li>Wrote XML schema specification files provided to clients</li>-->
+<!--              <li>Created a web interface allowing users to-->
+<!--                <ul>-->
+<!--                  <li>view the statuses of sorted and filtered instructions</li>-->
+<!--                  <li>upload and initiate processing of new files after providing 2nd factor credentials</li>-->
+<!--                </ul>-->
+<!--              </li>-->
+<!--              <li>Encrypted and signed files uploaded through the web interface</li>-->
+<!--              <li>Refactored system to allow non-file instruction sources (e.g. SWIFT messages)</li>-->
+<!--              <li>Designed and implemented fine-grained authorization system</li>-->
+<!--            </ul>-->
           </li>
           <li>
-            Second-factor authentication device mailing system
-            <ul>
-              <li>
-                Generated pdfs with names and addresses for mailing envelope window
-                <ul>
-                  <li>Gathered user information from Oracle database</li>
-                  <li>Included barcodes for mapping devices (with their own barcodes) to users</li>
-                </ul>
-              </li>
-              <li>Automatically activated devices after sending warning emails to device recipients</li>
-              <li>Generated system reports (e.g. number of "Bingo card" devices upgraded to PIN pad display cards)
-              </li>
-            </ul>
+            A 2FA device mailing system
+<!--            <ul>-->
+<!--              <li>-->
+<!--                Generated pdfs with names and addresses for mailing envelope window-->
+<!--                <ul>-->
+<!--                  <li>Gathered user information from Oracle database</li>-->
+<!--                  <li>Included barcodes for mapping devices (with their own barcodes) to users</li>-->
+<!--                </ul>-->
+<!--              </li>-->
+<!--              <li>Automatically activated devices after sending warning emails to device recipients</li>-->
+<!--              <li>Generated system reports (e.g. number of "Bingo card" devices upgraded to PIN pad display cards)-->
+<!--              </li>-->
+<!--            </ul>-->
           </li>
           <li>
-            Client for OCR web service (SOAP) for processing passport images
-            <ul>
-              <li>Decrypted image files uploaded by users</li>
-              <li>Sent image files to web service over https</li>
-              <li>Compared extracted text with database records</li>
-            </ul>
+            A client for an OCR web service (SOAP) for processing passport images
+<!--            <ul>-->
+<!--              <li>Decrypted image files uploaded by users</li>-->
+<!--              <li>Sent image files to web service over https</li>-->
+<!--              <li>Compared extracted text with database records</li>-->
+<!--            </ul>-->
           </li>
         </ul>
       </div>
@@ -219,7 +223,7 @@ Technologies used in these projects included: Java, Spring Boot, Docker, Kuberne
         Introductory Java course for undergraduate and graduate students
         <ul>
           <li>Developed new course material including programming projects, lesson plans, lectures, and exams</li>
-          <li>Worked with students individually, in small groups, and as a class of 30</li>
+<!--          <li>Worked with students individually, in small groups, and as a class of 30</li>-->
         </ul>
       </div>
       <div class="job-subsection">
@@ -237,7 +241,7 @@ Technologies used in these projects included: Java, Spring Boot, Docker, Kuberne
         <ul>
           <li>Developed a user interface for "KIND", a tool for automatically verifying properties of the programs
             written in the Lustre dataflow programming language</li>
-          <li>Debugged connection with tool back end</li>
+<!--          <li>Debugged connection with tool back end</li>-->
         </ul>
       </div>
       <div class="job-subsection">
