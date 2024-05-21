@@ -12,14 +12,56 @@
 <body>
 <style>
     @media print {
-        .col-sm-6 {
-            width: 50%;
+        .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
             float: left;
         }
 
+        .col-sm-12 {
+            width: 100%;
+        }
+
+        .col-sm-11 {
+            width: 91.66666667%;
+        }
+
+        .col-sm-10 {
+            width: 83.33333333%;
+        }
+
+        .col-sm-9 {
+            width: 75%;
+        }
+
+        .col-sm-8 {
+            width: 66.66666667%;
+        }
+
+        .col-sm-7 {
+            width: 58.33333333%;
+        }
+
+        .col-sm-6 {
+            width: 50%;
+        }
+
+        .col-sm-5 {
+            width: 41.66666667%;
+        }
+
         .col-sm-4 {
-            width: 33%;
-            float: left;
+            width: 33.33333333%;
+        }
+
+        .col-sm-3 {
+            width: 25%;
+        }
+
+        .col-sm-2 {
+            width: 16.66666667%;
+        }
+
+        .col-sm-1 {
+            width: 8.33333333%;
         }
 
         a[href]:after {
@@ -28,54 +70,77 @@
     }
 </style>
 <div class="container">
-    <div class="page-header">
-        <h1>Benjamin Berman</h1>
-    </div>
-    <div row="class">
-        <div class="col-sm-4 contact-info">
+    <div class="row">
+        <div class="col-sm-6">
+            <h1>Benjamin Berman</h1>
             <strong>Pittsburgh, PA</strong>, or <strong>Remote</strong><br/>
-            Willing to do remote work
         </div>
-        <div class="col-sm-4 contact-info">
-            bnjmnbrmn@gmail.com
+        <div class="col-sm-6 contact-info">
+            <br/>
+            bnjmnbrmn@gmail.com<br/>
             <a href="https://linkedin.com/in/bnjmnbrmn">https://linkedin.com/in/bnjmnbrmn</a><br/>
-        </div>
-        <div class="col-sm-4 contact-info">
             <a href="https://bnjmnbrmn.com">http://bnjmnbrmn.com</a><br/>
             <a href="https://github.com/bnjmnbrmn">http://github.com/bnjmnbrmn</a>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-6">
-            <h4>Overview</h4>
-            <p>I am a software engineer with a <strong>PhD</strong> and <strong>9+ years of experience in
-                industry</strong> who likes creating <strong>high-quality</strong> systems. Problems I am interested in
-                often relate to <strong>correctness</strong> (disambiguating
-                requirements, naming things, code readability, identifying variants/invariants/preconditions,
-                functional programming), <strong>reliability</strong> and recoverability (logging, monitoring,
-                testing, configuration minimization, redundancy, concurrency and memory issues), <strong>data
-                    storage and retrieval</strong> (sharding, transactions, high availability, SQL and NoSQL),
-                <strong>streaming data</strong> (reactive programming, serialization/deserialization, joining,
-                aggregation, retention, partitioning), reliable and repeatable <strong>deployment</strong> with zero
-                downtime, <strong>cloud infrastructure</strong> (IaC, provisioning, AWS, cost tradeoffs), <strong>performance</strong>
-                (latency, throughput/bandwidth, resource consumption, parallelization), <strong>security</strong>
-                (authorization, authentication, confidentiality and encryption, availability, integrity,
-                vulnerability detection and remediation), <strong>devops</strong> (automation, continuous
-                integration, containerization), <strong>usability</strong> (understanding stakeholders,
-                learnability, workflow efficiency), <strong>communication</strong> (technical and semi-technical
-                presentations, documentation, multi-team coordination) and <strong>developer productivity</strong>
-                (build speed, build tools, editing/refactoring tools, local environment setup, mentoring, knowledge
-                sharing).
-            </p>
-        </div>
-        <div class="col-sm-6">
-            <!--<h2 style="page-break-before: always">Skills</h2>-->
-            <h4>Skills/Tech</h4>
 
-            <p><em>(A mostly unorganized list of some tech I've used, partially meant to satisfy applicant tracking
-                systems, partially meant to illustrate my ability/interest in picking up new tools and
-                skills.)</em></p>
+    <div class="row">
+        <div class="col-sm-8">
+            <div>
+                <h4><strong>Overview</strong></h4>
+                <p>I am a software engineer with a PhD and 9+ years of experience in
+                    industry who likes creating <strong>high-quality</strong> systems. Problems I am interested in
+                    often relate to <strong>correctness</strong> (disambiguating
+                    requirements, naming things, code readability, identifying variants/invariants/preconditions,
+                    functional programming), <strong>reliability</strong> and recoverability (logging, monitoring,
+                    testing, configuration minimization, redundancy, concurrency and memory issues), <strong>data
+                        storage and retrieval</strong> (sharding, transactions, high availability, SQL and NoSQL),
+                    <strong>streaming data</strong> (reactive programming, serialization/deserialization, joining,
+                    aggregation, retention, partitioning), reliable and repeatable <strong>deployment</strong> with zero
+                    downtime, <strong>cloud infrastructure</strong> (IaC, provisioning, AWS, cost tradeoffs), <strong>performance</strong>
+                    (latency, throughput/bandwidth, resource consumption, parallelization), <strong>security</strong>
+                    (authorization, authentication, confidentiality and encryption, availability, integrity,
+                    vulnerability detection and remediation), <strong>devops</strong> (automation, continuous
+                    integration, containerization), <strong>usability</strong> (understanding stakeholders,
+                    learnability, workflow efficiency), <strong>communication</strong> (technical and semi-technical
+                    presentations, documentation, multi-team coordination) and <strong>developer productivity</strong>
+                    (build speed, build tools, editing/refactoring tools, local environment setup, mentoring, knowledge
+                    sharing). I also enjoy writing lists.
+                </p>
+            </div>
+            <div>
+                <h4><strong>Work Experience</strong></h4>
+                <div>
+                    <h5><strong>UPMC Enterprises, Pittsburgh, PA</strong></h5>
+                    <div class="job-subsection">
+                        <em>Senior Software Engineer, February 2022 to April 2024</em><br/>
+                        Part of the Alexandria Charts medical records platform team. The main challenge in this
+                        position was the <strong>wide range</strong> of applications/services to be upgraded,
+                        improved, and debugged. Highlights included:
+                        <ul>
+                            <li>Using Java reactive streams to improve document download speeds by more than 3x</li>
+                            <li>Debugging our CI/CD pipeline to significantly improve job completion times (e.g.
+                                8x)
+                            </li>
+                            <!--                    <li>A (WIP) system leveraging docker containers to greatly simplify deployment for new-->
+                            <!--                        customers-->
+                            <!--                    </li>-->
+                        </ul>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="col-sm-4">
+            <h4><strong>Skills/Tech</strong></h4>
+
+            <!--            <p><em>(A mostly unorganized list of some tech I've used, partially meant to satisfy applicant tracking-->
+            <!--                systems, partially meant to illustrate my ability/interest in picking up new tools and-->
+            <!--                skills.)</em></p>-->
 
             <p>
                 Java, Bash, Scala, Ruby, JavaScript, TypeScript,
@@ -88,14 +153,17 @@
                 Project Reactor, Kafka, Kafka Streams,
                 Kibana, Grafana,
                 OAuth, JWTs, SSL/TLS,
-                Java EE (Servlets, JSPs, EJBs),
-                HTTP, REST, SOAP, JSON, XML, YAML,
+                                Java EE (Servlets, JSPs, EJBs),
+                <!--                HTTP, -->
+                REST, SOAP, JSON, XML, YAML,
                 nginx, Tomcat, JBoss,
-                Unix/Linux cli tools (ssh, tmux, vi/vim, emacs, curl, gpg etc.),
-                Postman, Intellij IDEA,
+                Unix/Linux cli tools (ssh, tmux, vi/vim,
+                <!--                emacs, -->
+                curl, gpg, etc.),
+                <!--                Postman, Intellij IDEA,-->
                 Gradle, Maven, Ant, JUnit, TestNG,
                 Git, Mercurial, Subversion,
-<!--                CVS,-->
+                <!--                CVS,-->
                 Coq, Alloy, Lustre, ESC/Java2,
                 Flyway, Jackson, jEdit plugin development, Piccolo (Java library for zoom-able UIs),
                 <!--                WSL2, VirtualBox,-->
@@ -103,315 +171,123 @@
             </p>
         </div>
     </div>
-    <div class="row">
-        <h4>Work Experience</h4>
-        <div>
-            <h5>UPMC Enterprises, Pittsburgh, PA</h5>
-            <div class="job-subsection">
-                <em><strong>Senior Software Engineer</strong>, February 2022 to April 2024</em><br/>
-                Engineer on the Alexandria Charts medical records platform team. The main challenge in this
-                position was the <strong>wide range</strong> of applications/services to be upgraded,
-                improved, and debugged. Highlights included:
-                <ul>
-                    <li>Using Java reactive streams to improve document download speeds by more than 3x</li>
-                    <li>Debugging our CI/CD pipeline to significantly improve job completion times (e.g.
-                        8x)
-                    </li>
-                    <li>A (WIP) system leveraging docker containers to greatly simplify deployment for new
-                        customers
-                    </li>
-                </ul>
-
-                <!--<p>-->
-                <!--Applications/microservices included: "Document Viewer", a web app supporting searching patients' medical records across multiple EMR sources, viewing the highlighted results in multiple formats, and downloading the records in bulk; "Identity Reconciliation Tool", a web app allowing medical documents from multiple EMRs to be linked to the same patient; "Bulk Extraction", a tool for downloading zip files of medical records, based on searches (I improved performance by more than 3x); "Governor", a tool for appropriately transferring medical records between tenants; and "Indexing Service", a frontend for Elasticsearch, providing a domain specific language for searches (work included a major upgrade from Elasticsearch 7 to 8 in Kubernetes/EKS)-->
-                <!--<p>-->
-                <!--Technologies used in these projects included: Java, Spring Boot, Docker, Kubernetes, AWS (Secrets Manager, EKS, Parameter Store, S3, Cognito, RDS, SQS), Bash, Elasticsearch, PostgreSQL, MySQL, OAuth, JavaScript, AngularJS, TypeScript, Angular, Ruby, Ruby on Rails, OAuth, Azure AD/Entra, Git, Gitlab, Gitlab CI/CD, REST, RabbitMQ, Postman, newman, treetop parsing DSL.-->
-
-            </div>
-
-            <h5> M*Modal / 3M, Pittsburgh, PA</h5>
-            <p>(3M acquired M*Modal in February, 2019)</p>
-            <div class="job-subsection">
-
-                <em><strong>Senior Software Engineer</strong>, July 2017 to February 2022</em><br/>
-                Primarily Java/Spring Boot, with heavy usage of supporting technologies, plus leadership
-                (included time as <strong>tech lead</strong>), architectural,
-                and mentoring activities. The umbrella project/product was Computer Assisted
-                Provider Documentation (CAPD) Services, a web service connecting a physician-facing GUI with
-                a real-time natural language
-                processor, providing layers for security and feedback customization. Highlights included:
-                <ul>
-                    <li>
-                        Designing and implementing CAPD "Data Services", a Kafka Streams microservices
-                        project that processed/aggregated data from ~1000 req/second in real time
-                        <ul>
-                            <li>Worked across teams (data generators, data displayers, legacy ETL
-                                maintainers, and product)
-                                <!--                  in a high pressure situation-->
-                                to resolve critical ambiguities
-                                <!--                  :-->
-                                <!--                  <ul>-->
-                                <!--                    <li>-->
-                                <!--                      Sessions &#45;&#45; do they resume when a provider comes back from lunch?-->
-                                <!--                    </li>-->
-                                <!--                    <li>-->
-                                <!--                      User facing alert resolutions &#45;&#45; what state transitions count? How should they be debounced?-->
-                                <!--                    </li>-->
-                                <!--                    <li>-->
-                                <!--                      Document drafts vs. final documents-->
-                                <!--                    </li>-->
-                                <!--                  </ul>-->
-                            </li>
-                            <!--                <li>Aggregated, as well as mapped/filtered, incoming messages</li>-->
-                            <!--                <li>Dealt with out-of-order messages, client restarts, and network interruptions</li>-->
-                            <!--                <li>Included an HTTP API allowing paginated access to historical and current results</li>-->
-                            <!--                <li>Leveraged functional programming techniques to help guarantee correctness</li>-->
-                            <!--                <li>Successfully managed deployment to multiple AWS environments, including production</li>-->
-                        </ul>
-                    </li>
-                    <li>
-                        Adding support for "Encounter-Based Reasoning", which connected CAPD's real-time NLP
-                        service with previous analysis of documents for a given patient visit
-                        <ul>
-                            <li>Handled identifier mappings, configuration and credential caching, OAuth,
-                                fallback mechanisms, additional API calls for NLP evidence, and improved
-                                metrics, monitoring, and logging
-                            </li>
-                        </ul>
-                    </li>
-                    <!--            <li>-->
-                    <!--              Implementing the Notereader CDI interface-->
-                    <!--              <ul>-->
-                    <!--                <li>An inter-company project, connecting 3M/M*Modal's NLP with Epic. Included filtering based on provider feedback.-->
-                    <!--                </li>-->
-                    <!--&lt;!&ndash;                <li>Modeled and stored provider feedback, and used that feedback in determining subsequent responses (Spring Data&ndash;&gt;-->
-                    <!--&lt;!&ndash;                  JPA/Hibernate, transactions)&ndash;&gt;-->
-                    <!--&lt;!&ndash;                </li>&ndash;&gt;-->
-                    <!--              </ul>-->
-                    <!--            </li>-->
-                    <!--            <li>-->
-                    <!--              Migration from MongoDB to PostgreSQL-->
-                    <!--              <ul>-->
-                    <!--                <li>Took a low-risk, zero-downtime approach that wrote to both databases for a period of months before-->
-                    <!--                making a final cutover</li>-->
-                    <!--                <li>Carefully refactored existing code to ensure equivalent data would be sent to the new database</li>-->
-                    <!--              </ul>-->
-                    <!--            </li>-->
-                    <li>
-                        Migrating to AWS
-                        <ul>
-                            <li>Created a library of Terraform and Ansible scripts that allowed our services
-                                to be deployed, consistently, across multiple environments
-                                <!--                  (ephemeral and international)-->
-                            </li>
-                            <!--                  <li>Implemented new security requirements (automatic generation and maintenance of per-customer Postgres schemas, TLS between microservices)</li>-->
-                        </ul>
-                    </li>
-                    <!--            <li>-->
-                    <!--              Improvements to build scripts-->
-                    <!--              <ul>-->
-                    <!--                <li>Incorporated Ansible configuration generation into a Gradle plugin to maintain consistency between local development and other environments, and to reduce risk of password exposure.</li>-->
-                    <!--                <li>Dockerized application as part of the build process</li>-->
-                    <!--                <li>Incorporated local dockerized Mongo and Postgres databases, speeding up application startup during development by about 4x</li>-->
-                    <!--              </ul>-->
-                    <!--            </li>-->
-                    <!--            <li>-->
-                    <!--              Leadership and mentoring-->
-                    <!--              <ul>-->
-                    <!--                <li>Conducted rigorous code review and pair programming sessions</li>-->
-                    <!--                <li>Presented architectural overviews and technical explanations for new hires and engineers on collaborating teams</li>-->
-                    <!--                <li>Worked with Ops to debug production problems</li>-->
-                    <!--                <li>Provided important product behavior details, verbally and in writing/diagrams, to non-technical stakeholders</li>-->
-                    <!--                <li>Broke down, planned, prioritized, and provided updates for projects, in collaboration with product and QA managers</li>-->
-                    <!--              </ul>-->
-                    <!--            </li>-->
-                </ul>
-            </div>
-        </div>
-
-    </div>
-
     <div>
-        <h5>Interactive Brokers Group, Greenwich, CT</h5>
+
+        <h5><strong>M*Modal / 3M, Pittsburgh, PA</strong> (3M acquired M*Modal in February, 2019)</h5>
+
+
         <div class="job-subsection">
-            <em><strong>Secure Application Developer</strong>, February 2015 to July 2017.</em><br/>
-            Primarily Java/J2EE development, with some PL/SQL. Projects included:
+
+            <em>Senior Software Engineer, July 2017 to February 2022</em><br/>
+            Primarily Java/Spring Boot, with heavy usage of supporting technologies, plus leadership
+            (included time as <strong>tech lead</strong>), architectural,
+            and mentoring activities. The umbrella project/product was Computer Assisted
+            Provider Documentation (CAPD) Services, a web service connecting a physician-facing GUI with
+            a real-time natural language
+            processor, providing layers for security and feedback customization. Highlights included:
             <ul>
                 <li>
-                    Signed/encrypted file-based access to the account management system
-                    <!--            <ul>-->
-                    <!--              <li>Processed XML files allowing $1,000,000,000+ clients to create batch requests for wire withdrawals,-->
-                    <!--                deposit notifications, position transfers, etc.; generated XML response files</li>-->
-                    <!--              <li>Wrote XML schema specification files provided to clients</li>-->
-                    <!--              <li>Created a web interface allowing users to-->
-                    <!--                <ul>-->
-                    <!--                  <li>view the statuses of sorted and filtered instructions</li>-->
-                    <!--                  <li>upload and initiate processing of new files after providing 2nd factor credentials</li>-->
-                    <!--                </ul>-->
-                    <!--              </li>-->
-                    <!--              <li>Encrypted and signed files uploaded through the web interface</li>-->
-                    <!--              <li>Refactored system to allow non-file instruction sources (e.g. SWIFT messages)</li>-->
-                    <!--              <li>Designed and implemented fine-grained authorization system</li>-->
-                    <!--            </ul>-->
-                </li>
-                <li>
-                    2FA device mailing system
-                    <!--            <ul>-->
-                    <!--              <li>-->
-                    <!--                Generated pdfs with names and addresses for mailing envelope window-->
-                    <!--                <ul>-->
-                    <!--                  <li>Gathered user information from Oracle database</li>-->
-                    <!--                  <li>Included barcodes for mapping devices (with their own barcodes) to users</li>-->
-                    <!--                </ul>-->
-                    <!--              </li>-->
-                    <!--              <li>Automatically activated devices after sending warning emails to device recipients</li>-->
-                    <!--              <li>Generated system reports (e.g. number of "Bingo card" devices upgraded to PIN pad display cards)-->
-                    <!--              </li>-->
-                    <!--            </ul>-->
-                </li>
-                <li>
-                    A client for an OCR web service (SOAP) for processing passport images
-                    <!--            <ul>-->
-                    <!--              <li>Decrypted image files uploaded by users</li>-->
-                    <!--              <li>Sent image files to web service over https</li>-->
-                    <!--              <li>Compared extracted text with database records</li>-->
-                    <!--            </ul>-->
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div>
-        <h5>The University of Iowa, Iowa City, IA</h5>
-        <div class="job-subsection">
-            <em><strong>Research/Teaching Assistant, Instructor</strong>, August 2008 to December
-                2014</em><br/>
-            Work included:
-            <ul>
-                <li>Taught and developed course material for introductory Java</li>
-                <li>Developed and tested UIs for programming tools
+                    Designing and implementing CAPD "Data Services", a Kafka Streams microservices
+                    project that processed/aggregated data from ~1000 req/second in real time
                     <ul>
-                        <li>Collaborated on securing NSF grant CCF-1250306</li>
+                        <li>Worked across teams (main app front-end, reporting app, legacy ETL, and product/sales) to
+                            resolve critical ambiguities
+                        </li>
                     </ul>
                 </li>
-                <li>Assisted for various courses, including HCI and Formal Methods</li>
-            </ul>
-
-            <!--        <em><strong>Instructor</strong>, spring semester, 2014.</em><br />-->
-            <!--        Introductory Java course for undergraduate and graduate students-->
-            <!--        <ul>-->
-            <!--          <li>Developed new course material including programming projects, lesson plans, lectures, and exams</li>-->
-            <!--&lt;!&ndash;          <li>Worked with students individually, in small groups, and as a class of 30</li>&ndash;&gt;-->
-            <!--        </ul>-->
-        </div>
-        <!--      <div class="job-subsection">-->
-        <!--        <em><strong>Research Assistant</strong>, September, 2012, to September, 2014.</em><br />-->
-        <!--        User interfaces for the Coq Proof Assistant-->
-        <!--        <ul>-->
-        <!--          <li>Collaborated in the planning and development phases of NSF award CCF-1250306</li>-->
-        <!--          <li>Developed a basic UI for Coq as a plugin for the jEdit editor </li>-->
-        <!--          <li>Developed experimental extensions to the basic UI</li>-->
-        <!--          <li>Developed and executed user testing protocol</li>-->
-        <!--        </ul>-->
-        <!--      </div>-->
-        <!--      <div class="job-subsection">-->
-        <!--        <em><strong>Research Assistant</strong>, spring semester 2012</em><br />-->
-        <!--        <ul>-->
-        <!--          <li>Developed a user interface for "KIND", a tool for automatically verifying properties of the programs-->
-        <!--            written in the Lustre dataflow programming language</li>-->
-        <!--&lt;!&ndash;          <li>Debugged connection with tool back end</li>&ndash;&gt;-->
-        <!--        </ul>-->
-        <!--      </div>-->
-        <!--      <div class="job-subsection">-->
-        <!--        <em><strong>Teaching Assistant</strong>, fall semester 2008 through fall semester 2013</em><br />-->
-        <!--        <ul>-->
-        <!--          <li>Nine semesters in the University of Iowa Computer Science Department</li>-->
-        <!--          <li>Guided discussion sections for three different courses</li>-->
-        <!--          <li>Graded and answered student questions for the graduate level "Formal Methods in Software Engineering"-->
-        <!--            course for three semesters</li>-->
-        <!--        </ul>-->
-        <!--      </div>-->
-        <!--    </div>-->
-
-        <div>
-            <h4>Education</h4>
-            <ul>
-                <li>
-                    Ph.D. Computer Science, The University of Iowa, Iowa City, IA, December 2014
+                <li style="page-break-before: always">
+                    Adding support for "Encounter-Based Reasoning", which connected CAPD's real-time NLP
+                    service with previous analysis of documents for a given patient visit
                     <ul>
-                        <li>
-                            Dissertation Title: <em>Development And User Testing Of New User Interfaces For
-                            Mathematics And
-                            Programming Tools</em>
+                        <li>Handled identifier mappings, configuration and credential caching, OAuth,
+                            fallback mechanisms, additional API calls for NLP evidence, and improved
+                            metrics, monitoring, and logging
                         </li>
                     </ul>
                 </li>
                 <li>
-                    B.S. Physics, Rice University, Houston, TX, May 2008
+                    Migrating to AWS
+                    <ul>
+                        <li>Created a library of Terraform and Ansible scripts that allowed our services
+                            to be deployed, consistently, across multiple environments
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
-
-        <!--    <div>-->
-        <!--      &lt;!&ndash;<h2 style="page-break-before: always">Skills</h2>&ndash;&gt;-->
-        <!--      <h2>Skills</h2>-->
-        <!--      <div class="row">-->
-        <!--        <div class="col-sm-6">-->
-        <!--          <ul>-->
-        <!--            <li>Java (primary), Bash, SQL, Ruby, JavaScript, TypeScript, Scala, C, Groovy, Python (some) </li>-->
-        <!--            <li>Spring, Spring Boot, Spring Data JPA, Spring Cloud Stream</li>-->
-        <!--            <li>HTTP, REST, SOAP, node, npm</li>-->
-        <!--            <li>MongoDB, PostgreSQL, MySQL, Redis, Kafka, Elasticsearch</li>-->
-        <!--            <li>Java (Jakarta) EE (Servlets, JPA, JSPs, EJBs, etc.), Hibernate,</li>-->
-        <!--            <li>Flyway, Jackson, Kafka Streams, Piccolo (Java library for zoom-able user interfaces), jEdit plugin development</li>-->
-        <!--            <li>Unix/Linux, Vi/Vim, Emacs, SSH, nginx, gpg, openssl</li>-->
-        <!--          </ul>-->
-        <!--        </div>-->
-        <!--        <div class="col-sm-6">-->
-        <!--          <ul>-->
-        <!--            <li>Docker, Kubernetes, Gitlab CI/CD</li>-->
-        <!--            <li>Terraform, Ansible, AWS (CCP certified), Grafana, Graphite</li>-->
-        <!--            <li>Gradle, Maven, Ant, Intellij IDEA</li>-->
-        <!--            <li>JUnit, TestNG</li>-->
-        <!--            <li>HTML, CSS, Angular, AngularJS</li>-->
-        <!--            <li>LaTeX, JSON, YAML, XML, Markdown, Org Mode</li>-->
-        <!--            <li>Git, Mercurial, Subversion, CVS</li>-->
-        <!--            <li>Coq, Alloy, Lustre, ESC/Java2, Dafny</li>-->
-        <!--          </ul>-->
-        <!--        </div>-->
-        <!--      </div>-->
-        <!--    </div>-->
-
         <div>
-            <h4>Publications/Presentations</h4>
-            <p>
-                Berman, B. A. and Hourcade, J. P (2014). Keyboard Card Menus: A New Presentation of
-                Non-Standard Shortcuts.
-                <em>Journal of Universal Computer Science, Special Issue on Trending Breakthroughs in
-                    Human-Computer
-                    Interaction.</em>
-            </p>
-            <p>
-                Berman, B. A. and Hourcade, J. P (2014). Keyboard Card Menus: Faster Learning of Many Fast
-                Commands. In
-                <em>Proceedings of the XIV International Congress of Human-Computer Interaction (Interaction
-                    2013), in the
-                    Spanish Congress of Informatics (CEDI)</em>, pages 105-112, Spain, 2013. ISBN
-                978-84-695-8352-4.
-            </p>
-            <p>
-                <em>New Coq User Interfaces: Survey and Ideas.</em> Presentation co-authored with Aaron
-                Stump and Juan Pablo
-                Hourcade. Presented at <em>The Coq Workshop 2012</em>, Princeton, NJ, USA, August 12, 2012.
-            </p>
-            <br/>
+            <h5><strong>Interactive Brokers Group, Greenwich, CT</strong></h5>
+            <div class="job-subsection">
+                <em>Secure Application Developer, February 2015 to July 2017.</em><br/>
+                Primarily Java/J2EE development, with some PL/SQL. Projects included:
+                <ul>
+                    <li>
+                        Signed/encrypted file-based access to the account management system
+                    </li>
+                    <li>
+                        2FA device mailing system
+                    </li>
+                    <li>
+                        A client for an OCR web service (SOAP) for processing passport images
+                    </li>
+                </ul>
+            </div>
         </div>
+        <div>
+            <h5><strong>The University of Iowa, Iowa City, IA</strong></h5>
+            <div class="job-subsection">
+                <em>Research/Teaching Assistant, Instructor, August 2008 to December
+                    2014</em><br/>
+                <ul>
+                    <li>Taught and developed course material for introductory Java</li>
+                    <li>Developed and tested UIs for programming tools
+                        <ul>
+                            <li>Collaborated on securing NSF grant CCF-1250306</li>
+                        </ul>
+                    </li>
+                    <li>Assisted for various courses, including HCI and Formal Methods</li>
+                </ul>
 
+            </div>
+        </div>
     </div>
-
+    <div>
+        <h4><strong>Education</strong></h4>
+        <ul>
+            <li>
+                Ph.D. Computer Science, The University of Iowa, Iowa City, IA, December 2014
+                <ul>
+                    <li>
+                        Dissertation Title: <em>Development And User Testing Of New User Interfaces For
+                        Mathematics And
+                        Programming Tools</em>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                B.S. Physics, Rice University, Houston, TX, May 2008
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h4><strong>Publications / Presentations</strong></h4>
+        <p> Berman, B. A. and Hourcade, J. P (2014). Keyboard Card Menus: A New Presentation of Non-Standard Shortcuts.
+            <em>Journal
+                of Universal Computer Science, Special Issue on Trending Breakthroughs in Human-Computer
+                Interaction.</em></p>
+        <p> Berman, B. A. and Hourcade, J. P (2014). Keyboard Card Menus: Faster Learning of Many Fast Commands. In <em>Proceedings
+            of the XIV International Congress of Human-Computer Interaction (Interaction 2013), in the Spanish Congress
+            of
+            Informatics (CEDI)</em>, pages 105-112, Spain, 2013. ISBN 978-84-695-8352-4. </p>
+        <p><em>New Coq User Interfaces: Survey and Ideas.</em> Presentation co-authored with Aaron Stump and Juan Pablo
+            Hourcade. Presented at <em>The Coq Workshop 2012</em>, Princeton, NJ, USA, August 12, 2012. </p>
+        <br/>
+    </div>
 </div>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
