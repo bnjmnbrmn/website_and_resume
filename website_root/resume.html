@@ -33,36 +33,13 @@
             <div>
                 <h4><strong>Overview</strong></h4>
                 <p>
-                    I am a software engineer with a Computer Science Ph.D. and 10 years of experience in industry. I
-                    have spent the past ~8 years working on microservices systems related to large-scale creation,
-                    analysis, storage, and retrieval of medical information. I would be happy to continue in
-                    healthcare technology, but I am open to working in other areas with similar challenges, especially
-                    where I can help people raise the bar on software quality.
-                </p>
-
-                <p>
-                    Distributed systems are notoriously difficult to get right. One reason for this is that our
-                    traditional single-threaded unit tests do not catch problems related to network constraints and
-                    concurrency. We also sometimes make developing distributed systems more difficult by delegating a)
-                    deployment and configuration to a separate Ops team and b) E2E+performance testing to a separate QA
-                    team, typically late in our development process. My experience with these systems has made me
-                    particularly interested in broadly-scoped tests that tackle non-determinism, observability,
-                    automated deployment as a way to tighten/remove debugging cycles, and bridging gaps between teams.
-                </p>
-
-                <p>
-                    Testing is not the only tool in our belt for making systems that work well, though--our ability
-                    to read and understand code (and requirements) is essential. Disambiguating concepts, finding
-                    accurate identifiers, and judiciously applying functional programming techniques are examples of
-                    valuable activities from which I get a lot of satisfaction. I also enjoy working with
-                    junior colleagues to help them write better code and use their editing tools more effectively.
-                </p>
-
-                <p>
-                    Although I currently consider Java+Spring Boot microservices to be my "bread and butter", I greatly
-                    enjoy learning new technologies as the need arises. I am particularly fond of Scala, for instance
-                    (though I want to emphasize that it is not appropriate for every job). I am also always eager for
-                    opportunities to continue growing my experience in architecture and data engineering.
+                    I am a software engineer and technical lead with a Computer Science Ph.D. and 11+ years of industry
+                    experience, including financial systems at BNY and Interactive Brokers. Java and Spring Boot are my
+                    bread and butter, but my broader focus is making complex systems reliable, understandable, and
+                    easier to change. I am an enthusiastic, pragmatic adopter of AI-assisted development, using coding
+                    agents within a development process grounded in static typing, automated testing, and human review
+                    to accelerate delivery without giving up correctness. I also enjoy mentoring developers and
+                    creating tools and workflows that help both human and AI contributors work effectively.
                 </p>
             </div>
 
@@ -111,8 +88,36 @@
     <div>
         <h5><strong>eNGINE, Pittsburgh, PA</strong></h5>
         <div class="job-subsection">
-            <em>Senior Software Engineer, June 2025 to Present</em><br/>
-            Extended Spring Boot/Angular Digital Assets Platform at BNY to interact with private blockchains.
+            <em>Senior Software Engineer &mdash; BNY engagement, June 2025 to Present</em><br/>
+            <ul>
+                <li>
+                    Extended an asynchronous integration between BNY's Spring Boot/Angular digital-assets platform and
+                    its enterprise information warehouse to support financial reporting; implemented and tested local
+                    messaging workflows with Apache ActiveMQ Artemis.
+                    <ul>
+                        <li>
+                            Flagged the blast-radius risk of enabling reporting across approximately 60 transaction
+                            types, partnered with Product to define the initial scope, built AI-assisted end-to-end test
+                            coverage, and implemented per-transaction-type configuration to support incremental rollout.
+                        </li>
+                        <li>
+                            Adapted quickly to a major late-stage requirement for authoritative system-of-record
+                            identifiers, working with CIW and Product stakeholders to refocus reporting on completed,
+                            fee-bearing blockchain transactions.
+                        </li>
+                        <li>
+                            Updated the Oracle database schema and indexes to associate off-chain platform records with
+                            corresponding on-chain activity.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Built an AI-assisted, multi-repository development environment with local service orchestration,
+                    end-to-end testing, parallel builds, and Bash/Zsh tab completion; optional local-database support
+                    reduced application startup from over two minutes to under 20 seconds, and I presented the
+                    environment to other engineers and helped colleagues adopt it.
+                </li>
+            </ul>
         </div>
     </div>
     <div>
