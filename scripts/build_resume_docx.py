@@ -14,7 +14,7 @@ from docx.shared import Inches, Pt, RGBColor
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_OUTPUT = ROOT / "BenjaminBermanSoftwareEngineerResumePNC.docx"
+DEFAULT_OUTPUT = ROOT / "BenjaminBermanSoftwareEngineerResume.docx"
 FONT = "Arial"
 ACCENT = RGBColor(31, 78, 121)
 
