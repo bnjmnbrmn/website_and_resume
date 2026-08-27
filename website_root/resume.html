@@ -17,6 +17,10 @@
   h5 { margin-top: 8px; }
   p  { margin-bottom: 6px; }
   ul { margin-bottom: 4px; }
+  /* Keep a job entry on one page, and never leave its heading stranded at
+     the bottom of the previous one. */
+  .job { page-break-inside: avoid; }
+  h4, h5 { page-break-after: avoid; }
 }
 </style>
 <div class="container">
@@ -95,7 +99,7 @@
     </div>
 
     <h4><strong>Work Experience</strong></h4>
-    <div>
+    <div class="job">
         <h5><strong>eNGINE, Pittsburgh, PA</strong></h5>
         <div class="job-subsection">
             <em>Senior Software Engineer &mdash; BNY engagement, June 2025 to Present</em><br/>
@@ -130,14 +134,14 @@
             </ul>
         </div>
     </div>
-    <div>
+    <div class="job">
         <h5><strong>TeleTracking Technologies Inc, Pittsburgh, PA</strong></h5>
         <div class="job-subsection">
             <em>Software Engineer III, July 2024 to March 2025</em><br/>
             Debugged and fixed hospital logistics software on an event-oriented platform written in Java, C#, and Python.
         </div>
     </div>
-    <div>
+    <div class="job">
         <h5><strong>UPMC Enterprises, Pittsburgh, PA</strong></h5>
         <div class="job-subsection">
             <em>Senior Software Engineer, February 2022 to April 2024</em><br/>
@@ -152,6 +156,7 @@
     </div>
 
 
+    <div class="job">
 <!--    <h5 style="page-break-before: always"><strong>M*Modal / 3M, Pittsburgh, PA</strong> (3M acquired M*Modal in February, 2019)</h5>-->
     <h5><strong>M*Modal / 3M, Pittsburgh, PA</strong> (3M acquired M*Modal in February, 2019)</h5>
 
@@ -193,7 +198,8 @@
             </li>
         </ul>
     </div>
-    <div>
+    </div>
+    <div class="job">
         <h5><strong>Interactive Brokers Group, Greenwich, CT</strong></h5>
         <div class="job-subsection">
             <em>Secure Application Developer, February 2015 to July 2017.</em><br/>
@@ -212,7 +218,7 @@
             <!--            </ul>-->
         </div>
     </div>
-    <div>
+    <div class="job">
         <h5><strong>The University of Iowa, Iowa City, IA</strong></h5>
         <div class="job-subsection">
             <em>Research/Teaching Assistant, Instructor, August 2008 to December
